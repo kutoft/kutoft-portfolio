@@ -1,0 +1,362 @@
+.mod-stepform .simform {
+	position: absolute;
+	margin: 0 auto;
+	padding: 0;
+	max-width: 265px;
+	width: 100%;
+	text-align: left;
+	font-size: 2.5em;
+    opacity: 0;
+    top: 46%;
+    left: 0%;
+    
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    
+    -webkit-transition: 0.3s opacity ease-in-out, 0.5s left ease-in-out;
+    -moz-transition: 0.3s opacity ease-in-out, 0.5s left ease-in-out;
+    -ms-transition: 0.3s opacity ease-in-out, 0.5s left ease-in-out;
+    -o-transition: 0.3s opacity ease-in-out, 0.5s left ease-in-out;
+    transition: 0.3s opacity ease-in-out, 0.5s left ease-in-out;
+    
+    
+    &.show {
+        opacity: 1;
+        left: 51.25%;
+        
+        -webkit-transition: 0.3s opacity ease-in-out 0.4s, 0.3s left ease-in-out 0.3s;
+        -moz-transition: 0.3s opacity ease-in-out 0.4s, 0.3s left ease-in-out 0.3s;
+        -ms-transition: 0.3s opacity ease-in-out 0.4s, 0.3s left ease-in-out 0.3s;
+        -o-transition: 0.3s opacity ease-in-out 0.4s, 0.3s left ease-in-out 0.3s;
+        transition: 0.3s opacity ease-in-out 0.4s, 0.3s left ease-in-out 0.3s;
+    }
+}
+
+.mod-stepform .simform .submit {
+	display: none;
+}
+
+/* Question list style */
+.mod-stepform .simform ol {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	position: relative;
+	-webkit-transition: height 0.4s;
+	transition: height 0.4s;
+}
+
+.mod-stepform .simform ol:before {
+	content: '';
+	background-color: rgba(0,0,0,0.1);
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 2.35em;
+}
+
+.mod-stepform .questions li {
+	z-index: 100;
+	position: relative;
+	visibility: hidden;
+	height: 0;
+	-webkit-transition: visibility 0s 0.4s, height 0s 0.4s;
+	transition: visibility 0s 0.4s, height 0s 0.4s;
+}
+
+.mod-stepform .questions li.current,
+.no-js .mod-stepform .questions li {
+	visibility: visible;
+	height: auto;
+	-webkit-transition: none;
+	transition: none;
+}
+
+/* Labels */
+.mod-stepform .questions li > span {
+	display: block;
+	overflow: hidden;
+}
+
+.mod-stepform .questions li > span label {
+	display: block;
+	-webkit-transition: -webkit-transform 0.4s;
+	transition: transform 0.4s;
+	-webkit-transform: translateY(-100%);
+	transform: translateY(-100%);
+}
+
+.mod-stepform .questions li.current > span label,
+.no-js .mod-stepform .questions li > span label {
+	-webkit-transition: none;
+	transition: none;
+	-webkit-transform: translateY(0);
+	transform: translateY(0);
+    color: #888;
+}
+
+.mod-stepform .show-next .questions li.current > span label {
+	-webkit-animation: moveUpFromDown 0.4s both;
+	animation: moveUpFromDown 0.4s both;
+}
+
+@-webkit-keyframes moveUpFromDown {
+	from { -webkit-transform: translateY(100%); }
+	to { -webkit-transform: translateY(0); }
+}
+
+@keyframes moveUpFromDown {
+	from { -webkit-transform: translateY(100%); transform: translateY(100%); }
+	to { -webkit-transform: translateY(0); transform: translateY(0); }
+}
+
+/* Input field */
+.mod-stepform .questions input,
+.mod-stepform .questions textarea {
+	display: block;
+	margin: 0.3em 0 0 0;
+	padding: 0.5em 1em 0.5em 0.7em;
+	width: 100%;
+	border: 1px solid $green;
+    background-color: transparent;
+	color: rgba(255,255,255,0.8);
+	font-size: 1em;
+	line-height: 1;
+	opacity: 0;
+	-webkit-transition: opacity 0.3s;
+	transition: opacity 0.3s;
+}
+.mod-stepform .questions textarea {
+    min-height: 37px;
+    height: 37px;
+}
+
+.mod-stepform .questions .current input,
+.mod-stepform .questions .current textarea,
+.no-js .mod-stepform .questions input {
+	opacity: 1;
+}
+
+.mod-stepform .questions input:focus,
+.mod-stepform .simform button:focus {
+	outline: none;
+}
+
+/* Next question button */
+.mod-stepform .next {
+	position: absolute;
+	right: 0;
+	top: 1.75em; /* padding-bottom of form plus progress bar height */
+	display: block;
+	padding: 0;
+	width: 2em;
+	height: 2em;
+	background: none;
+	color: rgba($green,0.8);
+	text-align: center;
+	opacity: 0;
+	z-index: 100;
+	cursor: pointer;
+	-webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+	transition: transform 0.3s, opacity 0.3s;
+	-webkit-transform: translateX(-20%);
+	transform: translateX(-20%);
+	pointer-events: none;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.mod-stepform .next:hover {
+	color: rgba($green,1);
+}
+
+.mod-stepform .next::after {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	content: "\e600";
+	text-transform: none;
+	font-weight: normal;
+	font-style: normal;
+	font-variant: normal;
+	font-family: 'feather';
+	line-height: 2;
+	speak: none;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.mod-stepform .next.show {
+	opacity: 1;
+	-webkit-transform: translateX(0);
+	transform: translateX(0);
+	pointer-events: auto;
+}
+
+/* Progress bar */
+.mod-stepform .simform .progress {
+	width: 0%;
+	height: 0.15em;
+	background: rgba($green,1);
+	-webkit-transition: width 0.4s ease-in-out;
+	transition: width 0.4s ease-in-out;
+    border-width: 0;
+    padding: 0;
+}
+
+.mod-stepform .simform .progress::before {
+	position: absolute;
+	top: auto;
+	width: 100%;
+	height: inherit;
+	background: rgba(0,0,0,0.05);
+	content: '';
+}
+
+/* Number indicator */
+.mod-stepform .simform .number {
+	position: absolute;
+	right: 0;
+	overflow: hidden;
+    margin: -10px -5px;
+	width: 3em;
+    color: #888;
+    font-size: 0.875rem;
+    font-weight: normal;
+    line-height: 1.5;
+}
+
+.mod-stepform .simform .number:after {
+	position: absolute;
+	left: 50%;
+	content: '/';
+	opacity: 0.4;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+
+.mod-stepform .simform .number span {
+	float: right;
+	width: 40%;
+	text-align: center;
+}
+
+.mod-stepform .simform .number .number-current {
+	float: left;
+}
+
+.mod-stepform .simform .number-next {
+	position: absolute;
+	left: 0;
+}
+
+.mod-stepform .simform.show-next .number-current {
+	-webkit-transition: -webkit-transform 0.4s;
+	transition: transform 0.4s;
+	-webkit-transform: translateY(-100%);
+	transform: translateY(-100%);
+}
+
+.mod-stepform .simform.show-next .number-next {
+	-webkit-animation: moveUpFromDown 0.4s both;
+	animation: moveUpFromDown 0.4s both;
+}
+
+/* Error and final message */
+.mod-stepform .simform .error-message,
+.mod-stepform .simform .final-message {
+	position: absolute;
+	visibility: hidden;
+	opacity: 0;
+	-webkit-transition: opacity 0.4s;
+	transition: opacity 0.4s;
+}
+
+.mod-stepform .simform .error-message {
+	padding: 0;
+    margin: -10px 0;
+	width: 100%;
+	color: rgba(0,0,0,0.7);
+	font-style: italic;
+	color: #888;
+    font-size: 0.875rem;
+    font-weight: normal;
+    line-height: 1.5;
+}
+
+.mod-stepform .final-message {
+	top: 50%;
+	left: 0;
+	padding: 0.5em;
+	width: 100%;
+	text-align: center;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+    color: #eee;
+    font-size: 1rem;
+    margin-top: 5px;
+}
+
+.mod-stepform .error-message.show,
+.mod-stepform .final-message.show {
+	visibility: visible;
+	opacity: 1;
+}
+
+.mod-stepform .final-message.show {
+	-webkit-transition-delay: 0.5s;
+	transition-delay: 0.5s;
+}
+
+/* Final hiding of form / showing message */
+.mod-stepform .simform-inner.hide {
+	visibility: hidden;
+	opacity: 0;
+	-webkit-transition: opacity 0.3s, visibility 0s 0.3s;
+	transition: opacity 0.3s, visibility 0s 0.3s;
+}
+
+/* No JS Fallback */
+.no-js .mod-stepform .simform {
+	font-size: 1.75em;
+}
+
+.no-js .mod-stepform .questions li {
+	padding: 0 0 2em;
+}
+
+.no-js .mod-stepform .simform .submit {
+	display: block;
+	float: right;
+	padding: 10px 20px;
+	border: none;
+	background: rgba(0,0,0,0.3);
+	color: rgba(0,0,0,0.4);
+}
+
+.no-js .mod-stepform .simform .controls {
+	display: none;
+}
+
+/* Remove IE clear cross */
+.mod-stepform input[type=text]::-ms-clear {
+    display: none;
+}
+
+/* Adjust form for smaller screens */
+@media screen and (max-width: 44.75em) {
+	.mod-stepform .simform {
+		font-size: 1.8em;
+	}
+}
+
+@media screen and (max-width: 33.5625em) {
+	.mod-stepform .simform {
+		font-size: 1.2em;
+	}
+}

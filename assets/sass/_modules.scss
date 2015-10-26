@@ -1,0 +1,224 @@
+/* ====================
+MODULES
+==================== */
+
+// ADD ALL CUSTOM MODULE STYLES HERE
+
+.mod-wrapper {
+    border: 0;
+    padding: 1rem 1rem 2.5rem;
+    margin-right: auto;
+    margin-left: auto; 
+    color: #222;
+    
+    .mod-header {
+        padding: 10px 20px;
+    }
+    .mod-header h5 {
+        text-align: left;
+        font-size: 1rem;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-weight: 400;
+    }
+    .mod-body {
+        padding: 10px 0 0;
+    }
+    .mod-footer {
+        padding: 0px;
+    }
+    
+    &.dark {
+        .mod-header h5 {
+            color: #bbb;
+        }
+        .body {
+            color: #eee;
+        }
+    }
+}
+
+.mod-hero {
+    background-image: url("../images/hero.jpg");
+    background-size: cover;
+    height: 600px;
+    position: relative;
+    overflow: hidden;
+    
+    .text-wrapper {
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        max-width: 500px;
+        z-index: 10;
+        
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        
+        h1, h2, h3, h4, h5, h6, p {
+            color: #fff;
+        }
+    }
+    .overlay {
+        background-image: url("../images/footer_lodyas.png");
+        opacity: 0.75;
+    }
+}
+
+.mod-contact {
+    background-image: url("../images/footer_lodyas.png");
+    background-blend-mode: multiply;
+    background-color: rgba($purple-d,0.5);
+    text-align: center;
+    padding: 3.5rem 1rem;
+    position: relative;
+    
+    h3 {
+        color: #eee;
+        display: inline-block;
+        margin: 0 10px;
+        vertical-align: middle;
+        opacity: 1;
+        
+        -webkit-transition: 0.5s opacity ease-in-out;
+        -moz-transition: 0.5s opacity ease-in-out;
+        -ms-transition: 0.5s opacity ease-in-out;
+        -o-transition: 0.5s opacity ease-in-out;
+        transition: 0.5s opacity ease-in-out;
+    }
+    ul {
+        display: inline-block;
+        font-size: 2rem;
+        margin: 0 10px;
+        vertical-align: middle;
+        overflow: visible;
+        
+        li:last-child {
+            opacity: 1;
+            
+            -webkit-transition: 0.5s opacity ease-in-out;
+            -moz-transition: 0.5s opacity ease-in-out;
+            -ms-transition: 0.5s opacity ease-in-out;
+            -o-transition: 0.5s opacity ease-in-out;
+            transition: 0.5s opacity ease-in-out;
+        }
+    }
+    .toggle-form {
+        position: relative;
+        left: 0;
+        opacity: 1;
+        
+        -webkit-transition: 0.5s left ease-in-out;
+        -moz-transition: 0.5s left ease-in-out;
+        -ms-transition: 0.5s left ease-in-out;
+        -o-transition: 0.5s left ease-in-out;
+        transition: 0.5s left ease-in-out;
+    }
+    .form-wrapper {
+        height: 0;
+        max-height: 600px;
+        overflow: hidden;
+        
+        transition: 0.6s height ease-in-out;
+        
+        &.open {
+            height: 325px;
+        }
+        input, textarea {
+            background-color: transparent;
+            &:focus {
+                border-color: $green;
+            }
+        }
+        textarea {
+            min-height: 150px;
+        }
+    }
+    
+    &.show {
+        h3 {
+            opacity: 0;
+            pointer-events: none;
+        }
+        ul li:last-child {
+            opacity: 0;
+            pointer-events: none;
+        }
+        .toggle-form {
+            left: -245px;
+        }
+    }
+}
+
+.mod-work-wrapper {
+    height: 250px;
+    padding: 2rem;
+    background-size: cover;
+    background-position: center center;
+    overflow: hidden;
+    
+    .overlay {
+        background-image: url("../images/footer_lodyas.png");
+        opacity: 0.75;
+        
+        -webkit-transition: 0.3s opacity ease-in-out;
+        -moz-transition: 0.3s opacity ease-in-out;
+        -ms-transition: 0.3s opacity ease-in-out;
+        -o-transition: 0.3s opacity ease-in-out;
+        transition: 0.3s opacity ease-in-out;
+    }
+    .text-wrapper {
+        color: #fff;
+        position: relative;
+        z-index: 10;
+        
+        h4 {
+            font-weight: bold;
+        }
+    }
+    .select-project {
+        position: absolute;
+        right: -5px;
+        bottom: -10px;
+        padding: 21px 25px;
+        color: #fff;
+        background-color: $green;
+        opacity: 0.7;
+        
+        -webkit-transition: 0.3s opacity ease-in-out;
+        -moz-transition: 0.3s opacity ease-in-out;
+        -ms-transition: 0.3s opacity ease-in-out;
+        -o-transition: 0.3s opacity ease-in-out;
+        transition: 0.3s opacity ease-in-out;
+        
+        -webkit-transform: rotate(15deg);
+        -moz-transform: rotate(15deg);
+        -ms-transform: rotate(15deg);
+        -o-transform: rotate(15deg);
+        transform: rotate(15deg);
+        
+        i {
+            display: inline-block;
+            -webkit-transform: rotate(-15deg);
+            -moz-transform: rotate(-15deg);
+            -ms-transform: rotate(-15deg);
+            -o-transform: rotate(-15deg);
+            transform: rotate(-15deg);
+        }
+        
+        &:hover {
+            opacity: 0.9;
+        }
+    }   
+    
+    &:hover .overlay {
+        opacity: 0.45;
+    }
+}
+
+@import "modules/mod-recent-work";
+@import "modules/mod-stepform";
