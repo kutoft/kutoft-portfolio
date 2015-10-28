@@ -20,12 +20,14 @@ $(document).ready(function () {
         $(".page-wrapper").removeClass("active");
         $("#work-content").addClass("active");
         $wrapper.animate({left: -$winWidth});
+        new WOW().init();
     });
     $home.on("click", function(){
         var $winWidth = $win.width();
         $(".page-wrapper").removeClass("active");
         $("#home-content").addClass("active");
         $wrapper.animate({left: 0});
+        new WOW().init();
     });
 //    $("#project-1").on("click", function(){
 //        var $winWidth = $win.width();
