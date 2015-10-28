@@ -3,3 +3,72 @@
 ==================== */
 
 // ADD ALL 1025PX AND HIGHER SCREEN STYLES HERE
+
+.mod-work-wrapper {
+    
+    a .select-project {
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+
+        i {
+            -webkit-transform: rotate(0deg);
+            -moz-transform: rotate(0deg);
+            -ms-transform: rotate(0deg);
+            -o-transform: rotate(0deg);
+            transform: rotate(0deg);
+        }
+        &:hover {
+            opacity: 0.9;
+        }
+    } 
+    .social-icons li {
+        opacity: 0;
+        position: relative;
+        top: 5px;
+    }
+    &:hover {
+        .select-project {
+            -webkit-transform: rotate(15deg);
+            -moz-transform: rotate(15deg);
+            -ms-transform: rotate(15deg);
+            -o-transform: rotate(15deg);
+            transform: rotate(15deg);
+
+            i {
+                -webkit-transform: rotate(-15deg);
+                -moz-transform: rotate(-15deg);
+                -ms-transform: rotate(-15deg);
+                -o-transform: rotate(-15deg);
+                transform: rotate(-15deg);
+            }
+        }
+        .social-icons li {
+            opacity: 1;
+            top: 0;
+
+            -webkit-transition-delay: 0s;
+            -moz-transition-delay: 0s;
+            -ms-transition-delay: 0s;
+            -o-transition-delay: 0s;
+            transition-delay: 0s;
+
+            &:nth-child(2) {
+                -webkit-transition-delay: 0.1s;
+                -moz-transition-delay: 0.1s;
+                -ms-transition-delay: 0.1s;
+                -o-transition-delay: 0.1s;
+                transition-delay: 0.1s;
+            }
+            &:nth-child(3) {
+                -webkit-transition-delay: 0.2s;
+                -moz-transition-delay: 0.2s;
+                -ms-transition-delay: 0.2s;
+                -o-transition-delay: 0.2s;
+                transition-delay: 0.2s;
+            }
+        }
+    }
+}

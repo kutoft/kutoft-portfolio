@@ -5,8 +5,35 @@ USER INTERFACE
 // ADD ALL CUSTOM USER INTERFACE STYLES HERE (SOME EXAMPLES BELOW)
 
 /* ========== begin: ICONS ========== */
-
+.social-icons {
+    font-size: 1.4rem;
+    position: relative;
+    display: inline-block;
+}
 /* ========== end: ICONS ========== */
+
+
+/* ========== begin: IMAGES ========== */
+.image-wrapper {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    
+    img {
+        max-width: 100%;
+        height: auto;
+        opacity: 0;
+    }
+    .image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-size: cover;
+    }
+}
+/* ========== end: IMAGES ========== */
 
 
 /* ========== begin: BUTTONS ========== */

@@ -68,7 +68,14 @@ MODULES
         opacity: 0.75;
     }
 }
-
+.mod-recent-work {
+    padding: 1rem;
+    
+    .mod-work-wrapper {
+        padding: 0.5rem 1rem;
+        height: auto;
+    }
+}
 .mod-contact {
     background-image: url("../images/footer_lodyas.png");
     background-blend-mode: multiply;
@@ -135,7 +142,7 @@ MODULES
             }
         }
         textarea {
-            min-height: 150px;
+            min-height: 10px;
         }
     }
     
@@ -161,64 +168,122 @@ MODULES
     background-position: center center;
     overflow: hidden;
     
-    .overlay {
-        background-image: url("../images/footer_lodyas.png");
-        opacity: 0.75;
+    a {
+        display: block;
         
-        -webkit-transition: 0.3s opacity ease-in-out;
-        -moz-transition: 0.3s opacity ease-in-out;
-        -ms-transition: 0.3s opacity ease-in-out;
-        -o-transition: 0.3s opacity ease-in-out;
-        transition: 0.3s opacity ease-in-out;
+        .overlay {
+            background-image: url("../images/footer_lodyas.png");
+            opacity: 0.75;
+
+            -webkit-transition: 0.3s opacity ease-in-out;
+            -moz-transition: 0.3s opacity ease-in-out;
+            -ms-transition: 0.3s opacity ease-in-out;
+            -o-transition: 0.3s opacity ease-in-out;
+            transition: 0.3s opacity ease-in-out;
+        }
+        .text-wrapper {
+            color: #fff;
+            position: relative;
+            z-index: 10;
+
+            h4 {
+                font-weight: bold;
+            }
+        }
+        .select-project {
+            position: absolute;
+            right: -5px;
+            bottom: -10px;
+            padding: 21px 25px;
+            color: #fff;
+            background-color: $green;
+            opacity: 0.7;
+
+            -webkit-transition: 0.3s all ease-in-out;
+            -moz-transition: 0.3s all ease-in-out;
+            -ms-transition: 0.3s all ease-in-out;
+            -o-transition: 0.3s all ease-in-out;
+            transition: 0.3s all ease-in-out;
+
+            -webkit-transform: rotate(15deg);
+            -moz-transform: rotate(15deg);
+            -ms-transform: rotate(15deg);
+            -o-transform: rotate(15deg);
+            transform: rotate(15deg);
+
+            i {
+                display: inline-block;
+                font-size: 1.3rem;
+                -webkit-transform: rotate(-15deg);
+                -moz-transform: rotate(-15deg);
+                -ms-transform: rotate(-15deg);
+                -o-transform: rotate(-15deg);
+                transform: rotate(-15deg);
+
+                -webkit-transition: 0.3s all ease-in-out;
+                -moz-transition: 0.3s all ease-in-out;
+                -ms-transition: 0.3s all ease-in-out;
+                -o-transition: 0.3s all ease-in-out;
+                transition: 0.3s all ease-in-out;
+            }
+            &:hover {
+                opacity: 0.9;
+            }
+            } 
+
+        &:hover .overlay {
+            opacity: 0.45;
+        }
     }
-    .text-wrapper {
-        color: #fff;
+    .social-icons li {
+        opacity: 1;
         position: relative;
-        z-index: 10;
+        top: 0;
         
-        h4 {
-            font-weight: bold;
+        -webkit-transition: 0.3s opacity ease-in-out 0.2s, 0.3s top ease-in-out 0.2s;
+        -moz-transition: 0.3s opacity ease-in-out 0.2s, 0.3s top ease-in-out 0.2s;
+        -ms-transition: 0.3s opacity ease-in-out 0.2s, 0.3s top ease-in-out 0.2s;
+        -o-transition: 0.3s opacity ease-in-out 0.2s, 0.3s top ease-in-out 0.2s;
+        transition: 0.3s opacity ease-in-out 0.2s, 0.3s top ease-in-out 0.2s;
+        
+        &:nth-child(2) {
+            -webkit-transition-delay: 0.1s;
+            -moz-transition-delay: 0.1s;
+            -ms-transition-delay: 0.1s;
+            -o-transition-delay: 0.1s;
+            transition-delay: 0.1s;
         }
-    }
-    .select-project {
-        position: absolute;
-        right: -5px;
-        bottom: -10px;
-        padding: 21px 25px;
-        color: #fff;
-        background-color: $green;
-        opacity: 0.7;
-        
-        -webkit-transition: 0.3s opacity ease-in-out;
-        -moz-transition: 0.3s opacity ease-in-out;
-        -ms-transition: 0.3s opacity ease-in-out;
-        -o-transition: 0.3s opacity ease-in-out;
-        transition: 0.3s opacity ease-in-out;
-        
-        -webkit-transform: rotate(15deg);
-        -moz-transform: rotate(15deg);
-        -ms-transform: rotate(15deg);
-        -o-transform: rotate(15deg);
-        transform: rotate(15deg);
-        
-        i {
-            display: inline-block;
-            -webkit-transform: rotate(-15deg);
-            -moz-transform: rotate(-15deg);
-            -ms-transform: rotate(-15deg);
-            -o-transform: rotate(-15deg);
-            transform: rotate(-15deg);
+        &:nth-child(3) {
+            -webkit-transition-delay: 0s;
+            -moz-transition-delay: 0s;
+            -ms-transition-delay: 0s;
+            -o-transition-delay: 0s;
+            transition-delay: 0s;
         }
-        
-        &:hover {
-            opacity: 0.9;
+        a {
+            color: #fff;
         }
-    }   
-    
-    &:hover .overlay {
-        opacity: 0.45;
     }
 }
+.mod-content-wrapper {
+    position: relative;
+    color: #fff;
+    padding: 2rem;
+    
+    .project-back {
+        position: absolute;
+        top: 15px;
+        right: 20px;
+        
+        i {
+            font-size: 1.3rem;
+            border: 1px solid $green;
+            border-radius: 50%;
+            padding: 2px 6px;
+        }
+    }
+}
+
 
 @import "modules/mod-recent-work";
 @import "modules/mod-stepform";

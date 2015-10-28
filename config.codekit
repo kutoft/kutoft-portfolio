@@ -637,6 +637,28 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/assets\/images\/placeholder-16x9.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 9938,
+		"inputAbbreviatedPath": "\/assets\/images\/placeholder-16x9.jpg",
+		"outputAbbreviatedPath": "\/assets\/images\/placeholder-16x9.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/images\/placeholder-square.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 8060,
+		"inputAbbreviatedPath": "\/assets\/images\/placeholder-square.jpg",
+		"outputAbbreviatedPath": "\/assets\/images\/placeholder-square.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/images\/skyline-austin.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -1031,6 +1053,78 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/includes\/projects\/_mod-recent-work-v2.kit": {
+		"fileType": 2048,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/includes\/projects\/_mod-recent-work-v2.kit",
+		"outputAbbreviatedPath": "\/includes\/projects\/_mod-recent-work-v2.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/includes\/projects\/_project-1.kit": {
+		"fileType": 2048,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/includes\/projects\/_project-1.kit",
+		"outputAbbreviatedPath": "\/includes\/projects\/_project-1.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/includes\/projects\/_project-2.kit": {
+		"fileType": 2048,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/includes\/projects\/_project-2.kit",
+		"outputAbbreviatedPath": "\/includes\/projects\/_project-2.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/includes\/projects\/_project-3.kit": {
+		"fileType": 2048,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/includes\/projects\/_project-3.kit",
+		"outputAbbreviatedPath": "\/includes\/projects\/_project-3.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/includes\/projects\/_project-4.kit": {
+		"fileType": 2048,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/includes\/projects\/_project-4.kit",
+		"outputAbbreviatedPath": "\/includes\/projects\/_project-4.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/includes\/projects\/_project-5.kit": {
+		"fileType": 2048,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/includes\/projects\/_project-5.kit",
+		"outputAbbreviatedPath": "\/includes\/projects\/_project-5.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/includes\/projects\/_project-6.kit": {
+		"fileType": 2048,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/includes\/projects\/_project-6.kit",
+		"outputAbbreviatedPath": "\/includes\/projects\/_project-6.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/includes\/ui\/_ui-social.kit": {
+		"fileType": 2048,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/includes\/ui\/_ui-social.kit",
+		"outputAbbreviatedPath": "\/includes\/ui\/_ui-social.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/index.html": {
 		"fileType": 8192,
 		"ignore": 1,
@@ -1078,7 +1172,7 @@
 	},
 "projectAttributes": {
 	"bowerAbbreviatedPath": "",
-	"displayValue": "portfolio-2015",
+	"displayValue": "kutoft-portfolio",
 	"displayValueWasSetByUser": 1,
 	"iconImageName": "compass_yellow"
 	},

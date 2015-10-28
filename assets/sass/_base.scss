@@ -44,10 +44,50 @@ p {
     left: 0;
     padding-top: 62px;
 }
+#home-content, #work-content {
+    height: 100vh;
+    overflow: hidden;
+    
+    &.active {
+        height: auto;
+        overflow: auto;
+    }
+}
 .page-wrapper {
     float: left;
 }
-
+.project-wrapper {
+    position: fixed;
+    top: 1000px;
+    background-color: #18191b;
+    z-index: 10000;
+    overflow: hidden;
+    overflow-y: scroll;
+    width: 100%;
+    min-height: 100vh;
+    -webkit-overflow-scrolling: touch;
+    
+    -webkit-transform: scale(0.3) rotate(0deg);
+    -moz-transform: scale(0.3) rotate(0deg);
+    -ms-transform: scale(0.3) rotate(0deg);
+    -o-transform: scale(0.3) rotate(0deg);
+    transform: scale(0.3) rotate(0deg);
+    
+    -webkit-transition: 0.7s all ease-in-out;
+    -moz-transition: 0.7s all ease-in-out;
+    -ms-transition: 0.7s all ease-in-out;
+    -o-transition: 0.7s all ease-in-out;
+    transition: 0.7s all ease-in-out;
+    
+    &.show {
+        top: 0 !important;
+        -webkit-transform: scale(1) rotate(0deg);
+        -moz-transform: scale(1) rotate(0deg);
+        -ms-transform: scale(1) rotate(0deg);
+        -o-transform: scale(1) rotate(0deg);
+        transform: scale(1) rotate(0deg);
+    }
+}
 
 /*
 ===== HEADER =====
@@ -150,3 +190,12 @@ p {
 ===== FOOTER =====
 */
 // ADD CUSTOM FOOTER STYLES HERE
+#footer {
+    color: #fff;
+    background-color: #171717;
+    padding: 0.5rem 0;
+    
+    p {
+        margin-bottom: 0;
+    }
+}
