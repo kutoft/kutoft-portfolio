@@ -27,36 +27,36 @@ $(document).ready(function () {
         $("#home-content").addClass("active");
         $wrapper.animate({left: 0});
     });
-    $("#project-1").on("click", function(){
-        var $winWidth = $win.width();
-        $(".page-wrapper").removeClass("active");
-        $("#project-1-content").addClass("active");
-        $wrapper.animate({left: -($winWidth * 2)});
-    });
-    $("#project-2").on("click", function(){
-        var $winWidth = $win.width();
-        $(".page-wrapper").removeClass("active");
-        $("#project-2-content").addClass("active");
-        $wrapper.animate({left: -($winWidth * 3)});
-    });
-    $("#project-3").on("click", function(){
-        var $winWidth = $win.width();
-        $(".page-wrapper").removeClass("active");
-        $("#project-3-content").addClass("active");
-        $wrapper.animate({left: -($winWidth * 4)});
-    });
-    $("#project-4").on("click", function(){
-        var $winWidth = $win.width();
-        $(".page-wrapper").removeClass("active");
-        $("#project-4-content").addClass("active");
-        $wrapper.animate({left: -($winWidth * 5)});
-    });
-    $(".project-back").on("click", function(){
-        var $winWidth = $win.width();
-        $(".page-wrapper").removeClass("active");
-        $("#work-content").addClass("active");
-        $wrapper.animate({left: -$winWidth});
-    });
+//    $("#project-1").on("click", function(){
+//        var $winWidth = $win.width();
+//        $(".page-wrapper").removeClass("active");
+//        $("#project-1-content").addClass("active");
+//        $wrapper.animate({left: -($winWidth * 2)});
+//    });
+//    $("#project-2").on("click", function(){
+//        var $winWidth = $win.width();
+//        $(".page-wrapper").removeClass("active");
+//        $("#project-2-content").addClass("active");
+//        $wrapper.animate({left: -($winWidth * 3)});
+//    });
+//    $("#project-3").on("click", function(){
+//        var $winWidth = $win.width();
+//        $(".page-wrapper").removeClass("active");
+//        $("#project-3-content").addClass("active");
+//        $wrapper.animate({left: -($winWidth * 4)});
+//    });
+//    $("#project-4").on("click", function(){
+//        var $winWidth = $win.width();
+//        $(".page-wrapper").removeClass("active");
+//        $("#project-4-content").addClass("active");
+//        $wrapper.animate({left: -($winWidth * 5)});
+//    });
+//    $(".project-back").on("click", function(){
+//        var $winWidth = $win.width();
+//        $(".page-wrapper").removeClass("active");
+//        $("#work-content").addClass("active");
+//        $wrapper.animate({left: -$winWidth});
+//    });
     
     
     $(".toggle-form").on("click", function() {
@@ -72,6 +72,20 @@ $(document).ready(function () {
         }, 2500);
     }
     
+    
+    $(".project-wrapper").css("top", ($winHeight + 10));
+    
+    $(".project-expand").on("click", function(){
+        var $id = $(this).data("id");
+        var $content = "#" + $id + "-content";
+        $($content).addClass("show");
+        return false;
+    });
+     $(".project-back").on("click", function(){
+         var $content = $(this).parent().parent();
+         $($content).removeClass("show");
+         return false;
+    });
     
     // =====
     // Execute this JS after page content has loaded (images, videos, etc):
