@@ -436,7 +436,8 @@ MODULES
       position: relative;
       z-index: 10; }
       .mod-work-wrapper a .text-wrapper h4 {
-        font-weight: bold; }
+        font-weight: bold;
+        margin-top: 1rem; }
     .mod-work-wrapper a .select-project {
       position: absolute;
       right: -6px;
