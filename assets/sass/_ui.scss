@@ -9,9 +9,63 @@ USER INTERFACE
     font-size: 1.4rem;
     position: relative;
     display: inline-block;
+    overflow: visible;
+    
+    li {
+        opacity: 1;
+        position: relative;
+        top: 0;
+        
+        -webkit-transition: 0.3s opacity ease-in-out 0.2s, 0.3s top ease-in-out 0.2s;
+        -moz-transition: 0.3s opacity ease-in-out 0.2s, 0.3s top ease-in-out 0.2s;
+        -ms-transition: 0.3s opacity ease-in-out 0.2s, 0.3s top ease-in-out 0.2s;
+        -o-transition: 0.3s opacity ease-in-out 0.2s, 0.3s top ease-in-out 0.2s;
+        transition: 0.3s opacity ease-in-out 0.2s, 0.3s top ease-in-out 0.2s;
+        
+        &:nth-child(2) {
+            -webkit-transition-delay: 0.1s;
+            -moz-transition-delay: 0.1s;
+            -ms-transition-delay: 0.1s;
+            -o-transition-delay: 0.1s;
+            transition-delay: 0.1s;
+        }
+        &:nth-child(3) {
+            -webkit-transition-delay: 0s;
+            -moz-transition-delay: 0s;
+            -ms-transition-delay: 0s;
+            -o-transition-delay: 0s;
+            transition-delay: 0s;
+        }
+        a {
+            color: #fff;
+            
+            -webkit-transition: 0.3s all ease-in-out;
+            -moz-transition: 0.3s all ease-in-out;
+            -ms-transition: 0.3s all ease-in-out;
+            -o-transition: 0.3s all ease-in-out;
+            transition: 0.3s all ease-in-out;
+            
+            &:hover {
+                color: $green;
+                -webkit-animation: swing 1s;
+                animation: swing 1s;
+            }
+        }
+    }
 }
 /* ========== end: ICONS ========== */
-
+i {
+    -webkit-transition: 0.3s all ease-in-out;
+    -moz-transition: 0.3s all ease-in-out;
+    -ms-transition: 0.3s all ease-in-out;
+    -o-transition: 0.3s all ease-in-out;
+    transition: 0.3s all ease-in-out;
+}
+i:hover {
+    color: $green;
+    -webkit-animation: swing 1s;
+    animation: swing 1s;
+}
 
 /* ========== begin: IMAGES ========== */
 .image-wrapper {
@@ -31,6 +85,19 @@ USER INTERFACE
         right: 0;
         bottom: 0;
         background-size: cover;
+        background-position: center center;
+        
+        -webkit-transform: rotate(-15deg) scale(1.4);
+        -moz-transform: rotate(-15deg) scale(1.4);
+        -ms-transform: rotate(-15deg) scale(1.4);
+        -o-transform: rotate(-15deg) scale(1.4);
+        transform: rotate(-15deg) scale(1.4);
+        
+        -webkit-transition: 0.3s all ease-in-out;
+        -moz-transition: 0.3s all ease-in-out;
+        -ms-transition: 0.3s all ease-in-out;
+        -o-transition: 0.3s all ease-in-out;
+        transition: 0.3s all ease-in-out;
     }
 }
 /* ========== end: IMAGES ========== */

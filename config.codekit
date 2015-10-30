@@ -1068,15 +1068,6 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/includes\/_home.kit": {
-		"fileType": 2048,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/includes\/_home.kit",
-		"outputAbbreviatedPath": "\/includes\/_home.html",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
 	"\/includes\/_nav.kit": {
 		"fileType": 2048,
 		"ignore": 1,
@@ -1086,21 +1077,30 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/includes\/_work.kit": {
+	"\/includes\/modules\/_mod-recent-work-v2.kit": {
 		"fileType": 2048,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/includes\/_work.kit",
-		"outputAbbreviatedPath": "\/includes\/_work.html",
+		"inputAbbreviatedPath": "\/includes\/modules\/_mod-recent-work-v2.kit",
+		"outputAbbreviatedPath": "\/includes\/modules\/_mod-recent-work-v2.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/includes\/projects\/_mod-recent-work-v2.kit": {
+	"\/includes\/modules\/_mod-recent-work.kit": {
 		"fileType": 2048,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/includes\/projects\/_mod-recent-work-v2.kit",
-		"outputAbbreviatedPath": "\/includes\/projects\/_mod-recent-work-v2.html",
+		"inputAbbreviatedPath": "\/includes\/modules\/_mod-recent-work.kit",
+		"outputAbbreviatedPath": "\/includes\/modules\/_mod-recent-work.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/includes\/modules\/_mod-work.kit": {
+		"fileType": 2048,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/includes\/modules\/_mod-work.kit",
+		"outputAbbreviatedPath": "\/includes\/modules\/_mod-work.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},

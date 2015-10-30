@@ -41,9 +41,10 @@ MODULES
 .mod-hero {
     background-image: url("../images/hero.jpg");
     background-size: cover;
-    height: 600px;
+    height: 500px;
     position: relative;
     overflow: hidden;
+    background-position: center center;
     
     .text-wrapper {
         text-align: center;
@@ -233,35 +234,6 @@ MODULES
 
         &:hover .overlay {
             opacity: 0.45;
-        }
-    }
-    .social-icons li {
-        opacity: 1;
-        position: relative;
-        top: 0;
-        
-        -webkit-transition: 0.3s opacity ease-in-out 0.2s, 0.3s top ease-in-out 0.2s;
-        -moz-transition: 0.3s opacity ease-in-out 0.2s, 0.3s top ease-in-out 0.2s;
-        -ms-transition: 0.3s opacity ease-in-out 0.2s, 0.3s top ease-in-out 0.2s;
-        -o-transition: 0.3s opacity ease-in-out 0.2s, 0.3s top ease-in-out 0.2s;
-        transition: 0.3s opacity ease-in-out 0.2s, 0.3s top ease-in-out 0.2s;
-        
-        &:nth-child(2) {
-            -webkit-transition-delay: 0.1s;
-            -moz-transition-delay: 0.1s;
-            -ms-transition-delay: 0.1s;
-            -o-transition-delay: 0.1s;
-            transition-delay: 0.1s;
-        }
-        &:nth-child(3) {
-            -webkit-transition-delay: 0s;
-            -moz-transition-delay: 0s;
-            -ms-transition-delay: 0s;
-            -o-transition-delay: 0s;
-            transition-delay: 0s;
-        }
-        a {
-            color: #fff;
         }
     }
 }
