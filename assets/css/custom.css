@@ -8,27 +8,6 @@ URL: http://www.mysamplesite.com
 /* ====================
 BASE
 ==================== */
-.delay-3 {
-  -webkit-transition-delay: 0.3s;
-  -moz-transition-delay: 0.3s;
-  -ms-transition-delay: 0.3s;
-  -o-transition-delay: 0.3s;
-  transition-delay: 0.3s; }
-
-.delay-6 {
-  -webkit-transition-delay: 0.6s;
-  -moz-transition-delay: 0.6s;
-  -ms-transition-delay: 0.6s;
-  -o-transition-delay: 0.6s;
-  transition-delay: 0.6s; }
-
-.delay-9 {
-  -webkit-transition-delay: 0.9s;
-  -moz-transition-delay: 0.9s;
-  -ms-transition-delay: 0.9s;
-  -o-transition-delay: 0.9s;
-  transition-delay: 0.9s; }
-
 body {
   position: relative;
   overflow-x: hidden;
@@ -362,9 +341,9 @@ MODULES
         font-weight: bold; }
     .mod-work-wrapper a .select-project {
       position: absolute;
-      right: -5px;
+      right: -6px;
       bottom: -10px;
-      padding: 21px 25px;
+      padding: 22px 26px;
       color: #fff;
       background-color: #008000;
       opacity: 0.7;

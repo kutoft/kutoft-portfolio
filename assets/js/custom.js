@@ -21,6 +21,8 @@ $(document).ready(function () {
         $("#work-content").addClass("active");
         $wrapper.animate({left: -$winWidth});
         new WOW().init();
+        var bLazy = new Blazy({ 
+        });
     });
     $home.on("click", function(){
         var $winWidth = $win.width();
