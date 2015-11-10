@@ -508,6 +508,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/assets\/images\/daily-post.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.5685e+06,
+		"inputAbbreviatedPath": "\/assets\/images\/daily-post.png",
+		"outputAbbreviatedPath": "\/assets\/images\/daily-post.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/images\/footer_lodyas.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -625,6 +636,17 @@
 		"initialSize": 1715,
 		"inputAbbreviatedPath": "\/assets\/images\/iphone.png",
 		"outputAbbreviatedPath": "\/assets\/images\/iphone.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/images\/lakana-studios.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 854158,
+		"inputAbbreviatedPath": "\/assets\/images\/lakana-studios.png",
+		"outputAbbreviatedPath": "\/assets\/images\/lakana-studios.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -1060,6 +1082,22 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/assets\/sass\/custom.scss",
 		"outputAbbreviatedPath": "\/assets\/css\/custom.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
+	"\/assets\/sass\/modules\/_mod-project.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/assets\/sass\/modules\/_mod-project.scss",
+		"outputAbbreviatedPath": "\/assets\/sass\/css\/_mod-project.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
