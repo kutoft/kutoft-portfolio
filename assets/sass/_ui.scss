@@ -150,13 +150,35 @@ i:hover {
 /* ========== end: CAROUSEL ============== */
 
 .list {
+    color: #444;
+    font-family: 'Droid Serif', serif;
+    font-size: 0.875rem;
     margin-bottom: 2rem;
+    list-style-type: none;
     
     li {
         margin-bottom: 0.75rem;
+        position: relative;
         
         &:last-child {
             margin-bottom: 0;
+        }
+        
+        &:before {
+            content: "";
+            position: absolute;
+            top: 5%;
+            left: -15px;
+            width: 2px;
+            height: 90%;
+            background-color: #ccc;
+            
+            -webkit-transition: 0.3s background-color ease-in-out;
+            transition: 0.3s background-color ease-in-out;
+        }
+        
+        &:hover:before {
+            background-color: $green;
         }
     }
 }
