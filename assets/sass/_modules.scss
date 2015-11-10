@@ -246,9 +246,10 @@ MODULES
     }
 }
 .mod-content-wrapper {
-    position: relative;
+    position: absolute;
     color: #fff;
     padding: 0;
+    width: 100%;
     
     .mod-header {
         position: relative;
@@ -341,14 +342,15 @@ MODULES
             top: 0;
             opacity: 0;
             
+            -webkit-transform: scale(0.65);
             transform: scale(0.65);
             transform-origin: top;
             
+            -webkit-transition: 0.3s all ease-in-out;
             transition: 0.3s all ease-in-out;
             
             .image-wrapper .image {
                 -webkit-transform: none;
-                -moz-transform: none;
                 transform: none;
             }
             
@@ -356,19 +358,23 @@ MODULES
                 opacity: 1;
                 box-shadow: 0 0 50px #000;
                 
+                -webkit-transform: scale(1);
                 transform: scale(1);
             }
             &.second {
                 opacity: 0.55;
                 
+                -webkit-transform: scale(0.85);
                 transform: scale(0.85);
             }
             &.third {
                 opacity: 0.2;
                 
+                -webkit-transform: scale(0.7);
                 transform: scale(0.7);
             }
             &.off {
+                -webkit-transform: scale(1.15);
                 transform: scale(1.15);
             }
         }
@@ -377,13 +383,20 @@ MODULES
         list-style-type: none;
         margin: 0 auto;
         position: absolute;
-        bottom: 10px;
-        left: 50%;
+        top: calc(50% - 24px);
+        left: 5%;
+        width: 90%;
         z-index: 21;
         
-        transform: translateX(-50%);
-        
         .next, .prev {
+            font-size: 3rem;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .next {
+            left: auto;
+            right: 0;
         }
     }
 }
