@@ -116,3 +116,47 @@ i:hover {
 /* ========== begin: TABS ========== */
 
 /* ========== end: TABS ========== */
+
+/* ========== begin: CAROUSEL ============== */
+.owl-carousel {
+    .owl-pagination {
+        .owl-page {
+            span {
+                position: relative;
+                width: 45px;
+                height: 3px;
+                border-radius: 0;
+                overflow: hidden;
+                
+                &:after {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    width: 45px;
+                    height: 3px;
+                    left: -45px;
+                    background-color: $green;
+                    
+                    -webkit-transition: 0.6s left ease-in-out;
+                    transition: 0.6s left ease-in-out;
+                }
+            }
+            &.active span:after {
+                left: 0;
+            }
+        }
+    }
+}
+/* ========== end: CAROUSEL ============== */
+
+.list {
+    margin-bottom: 2rem;
+    
+    li {
+        margin-bottom: 0.75rem;
+        
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
