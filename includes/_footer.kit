@@ -11,8 +11,10 @@
 <script src="<!--$root-->assets/framework/js/vendor/owl.carousel.js"></script>
 <script src="<!--$root-->assets/framework/js/vendor/classie.js"></script>
 <script src="<!--$root-->assets/framework/js/vendor/dynamics.min.js"></script>
+<script src="<!--$root-->assets/framework/js/vendor/jquery-animate-css-rotate-scale.js"></script>
 <script src="<!--$root-->assets/framework/js/main.js"></script>
 <script src="<!--$root-->assets/js/wow.min.js"></script>
+<script src="<!--$root-->assets/js/blazy.min.js"></script>
 <script src="<!--$root-->assets/js/custom.js"></script>
 
 <script>
@@ -39,6 +41,14 @@
 
 <script>
     new WOW().init();
+</script>
+<script>
+    ;(function() {
+        // Initialize
+        var bLazy = new Blazy({ 
+        offset: 100 // Loads images 100px before they're visible
+    });
+    })();
 </script>
 
 <script>

@@ -6,7 +6,7 @@ MODULES
 
 .mod-wrapper {
     border: 0;
-    padding: 1rem 1rem 2.5rem;
+    padding: 3rem 1rem;
     margin-right: auto;
     margin-left: auto; 
     color: #222;
@@ -41,9 +41,10 @@ MODULES
 .mod-hero {
     background-image: url("../images/hero.jpg");
     background-size: cover;
-    height: 600px;
+    height: 500px;
     position: relative;
     overflow: hidden;
+    background-position: center center;
     
     .text-wrapper {
         text-align: center;
@@ -68,8 +69,10 @@ MODULES
         opacity: 0.75;
     }
 }
+.mod-overview {
+    padding-bottom: 4rem;
+}
 .mod-recent-work {
-    padding: 1rem;
     
     .mod-work-wrapper {
         padding: 0.5rem 1rem;
@@ -188,13 +191,14 @@ MODULES
 
             h4 {
                 font-weight: bold;
+                margin-top: 1rem;
             }
         }
         .select-project {
             position: absolute;
-            right: -5px;
+            right: -6px;
             bottom: -10px;
-            padding: 21px 25px;
+            padding: 22px 26px;
             color: #fff;
             background-color: $green;
             opacity: 0.7;
@@ -228,6 +232,11 @@ MODULES
             }
             &:hover {
                 opacity: 0.9;
+                i {
+                    color: #fff;
+                    -webkit-animation: none 1s;
+                    animation: none 1s;
+                }
             }
             } 
 
@@ -235,45 +244,43 @@ MODULES
             opacity: 0.45;
         }
     }
-    .social-icons li {
-        opacity: 1;
-        position: relative;
-        top: 0;
-        
-        -webkit-transition: 0.3s opacity ease-in-out 0.2s, 0.3s top ease-in-out 0.2s;
-        -moz-transition: 0.3s opacity ease-in-out 0.2s, 0.3s top ease-in-out 0.2s;
-        -ms-transition: 0.3s opacity ease-in-out 0.2s, 0.3s top ease-in-out 0.2s;
-        -o-transition: 0.3s opacity ease-in-out 0.2s, 0.3s top ease-in-out 0.2s;
-        transition: 0.3s opacity ease-in-out 0.2s, 0.3s top ease-in-out 0.2s;
-        
-        &:nth-child(2) {
-            -webkit-transition-delay: 0.1s;
-            -moz-transition-delay: 0.1s;
-            -ms-transition-delay: 0.1s;
-            -o-transition-delay: 0.1s;
-            transition-delay: 0.1s;
-        }
-        &:nth-child(3) {
-            -webkit-transition-delay: 0s;
-            -moz-transition-delay: 0s;
-            -ms-transition-delay: 0s;
-            -o-transition-delay: 0s;
-            transition-delay: 0s;
-        }
-        a {
-            color: #fff;
-        }
-    }
 }
 .mod-content-wrapper {
     position: relative;
     color: #fff;
-    padding: 2rem;
+    padding: 0;
     
+    .mod-header {
+        position: relative;
+        z-index: 100;
+        width: 100%;
+        height: 50px;
+        color: #f9f9f9;
+        background-color: #222;
+        text-align: center;
+        border-bottom: 1px solid #333;
+        @include linear-gradient( #292929, #222);
+    }
+    .project-nav {
+        float: left;
+        padding: 10px 20px;
+        
+        a {
+            height: 30px;
+            position: relative;
+            top: 5px;
+        }
+        
+        i {
+            font-size: 1.25rem;
+            border: 1px solid $green;
+            border-radius: 50%;
+            padding: 4px;
+        }
+    }
     .project-back {
-        position: absolute;
-        top: 15px;
-        right: 20px;
+        float: right;
+        padding: 10px 20px;
         
         i {
             font-size: 1.3rem;
@@ -284,6 +291,123 @@ MODULES
     }
 }
 
+//.mod-carousel-wrapper {
+//    .owl-carousel {
+//        list-style-type: none;
+//        margin-left: 0;
+//        
+//        li {
+//        }
+//        .owl-item .image {
+//            -webkit-transform: rotate(0deg) scale(1);
+//            -moz-transform: rotate(0deg) scale(1);
+//            -ms-transform: rotate(0deg) scale(1);
+//            -o-transform: rotate(0deg) scale(1);
+//            transform: rotate(0deg) scale(1);
+//        }
+//        .owl-controls {
+//            position: absolute;
+//            bottom: 0;
+//            right: 5px;
+//            .owl-page {
+//                span {
+//                    background-color: transparent;
+//                    border: 2px solid $green;
+//                }
+//                &.active span {
+//                    opacity: 1;
+//                    background-color: $green;
+//                }
+//            }
+//        }
+//    }
+//}
+
+.mod-carousel-wrapper {
+    position: relative;
+    max-width: 90%;
+    margin: 0 auto;
+    margin-top: 75px;
+    
+    .slides-wrapper {
+        position: relative;
+        margin-left: 0;
+        list-style-type: none;
+        
+        .slide {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            opacity: 0;
+            
+            transform: scale(0.65);
+            transform-origin: top;
+            
+            transition: 0.3s all ease-in-out;
+            
+            .image-wrapper .image {
+                -webkit-transform: none;
+                -moz-transform: none;
+                transform: none;
+            }
+            
+            &.active {
+                opacity: 1;
+                box-shadow: 0 0 50px #000;
+                
+                transform: scale(1);
+            }
+            &.second {
+                opacity: 0.55;
+                
+                transform: scale(0.85);
+            }
+            &.third {
+                opacity: 0.2;
+                
+                transform: scale(0.7);
+            }
+            &.off {
+                transform: scale(1.15);
+            }
+        }
+    }
+    .controls {
+        list-style-type: none;
+        margin: 0 auto;
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        z-index: 21;
+        
+        transform: translateX(-50%);
+        
+        .next, .prev {
+        }
+    }
+}
+.mod-resume {
+    h5 {
+        margin: 0;
+        span {
+            color: #808080;
+            font-style: italic;
+            &:before {
+                content: "-";
+                margin-right: 3px;
+            }
+        }
+    }
+    .date {
+        font-size: 0.8rem;
+        font-style: italic;
+        margin-bottom: 10px;
+        .line {
+            margin: 0 5px;
+        }
+    }
+}
 
 @import "modules/mod-recent-work";
 @import "modules/mod-stepform";
