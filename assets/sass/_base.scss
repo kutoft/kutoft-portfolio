@@ -10,6 +10,9 @@ body {
     *:focus {
         outline: none;
     }
+    &.project-show {
+        position: fixed;
+    }
 }
 a, .button {
     display: inline-block;

@@ -1,15 +1,21 @@
 $(document).ready(function () {
 
-    var $doc = $(document);
+//    var $doc = $(document);
     var $win = $(window);
-    var $docHeight = $doc.height();
+//    var $docWidth = $doc.width();
+//    var $winWidth = $win.width();
+//    var $docHeight = $doc.height();
     var $winHeight = $win.height();
-    var $docWidth = $doc.width();
-    var $winWidth = $win.width();
     
     $("#site-logo").on("click", function(){
         $("#nav").toggleClass("show");
         return false;
+    });
+    
+    $(".nav-link").on("click", function() {
+        var $data = $(this).data("id");
+        var $id = "#" + $data + "";
+        $("body").animate({ scrollTop: $($id).offset().top - 50 }, 1000);
     });
     
     $(".toggle-form").on("click", function(){
@@ -31,26 +37,49 @@ $(document).ready(function () {
         var $id = $(this).data("id");
         var $content = "#" + $id + "-content";
         $($content).addClass("show");
+        
+        setTimeout(function() {
+            $("body").addClass("project-show");
+        }, 700);
+        
         return false;
     });
      $(".project-back").on("click", function(){
-         var $content = $(this).parent().parent().parent();
-         $($content).removeClass("show");
-         return false;
+        var $content = $(this).parent().parent().parent();
+        $($content).removeClass("show");
+         
+        $("body").removeClass("project-show");
+        $("body").animate({ scrollTop: $('#recent-work').offset().top }, 1000);
+         
+        return false;
     });
     
     $(".project-next").on("click", function(){
         var $num = $(this).parent().parent().parent().parent().data("id");
         var $next = "#project-" + ($num + 1) + "-content";
-        $(this).parent().parent().parent().removeClass("show");
-        $($next).addClass("show");
+        $(this).parent().parent().parent().parent().removeClass("show");
+        
+        if ( $($next).length > 0 ) {
+            $($next).addClass("show");
+        } else {
+            $("body").removeClass("project-show");
+            $("body").animate({ scrollTop: $('#recent-work').offset().top }, 1000);
+        }
+        
         return false;
     });
     $(".project-prev").on("click", function(){
         var $num = $(this).parent().parent().parent().parent().data("id");
         var $prev = "#project-" + ($num - 1) + "-content";
-        $(this).parent().parent().parent().removeClass("show");
-        $($prev).addClass("show");
+        $(this).parent().parent().parent().parent().removeClass("show");
+        
+        if ( $($prev).length > 0 ) {
+            $($prev).addClass("show");
+        } else {
+            $("body").removeClass("project-show");
+            $("body").animate({ scrollTop: $('#recent-work').offset().top }, 1000);
+        }
+        
         return false;
     });
     
@@ -64,7 +93,6 @@ $(document).ready(function () {
     var cardSlider = function(c) {
         var $sWrapper = $(c).children(".slides-wrapper");
         var $slides = $sWrapper.children(".slide");
-        var $controls = $(c).children(".controls");
         var $h = $(".mod-carousel-wrapper").children(".slides-wrapper").children(".slide").height() + "px";
         
         $sWrapper.css("height", $h);
@@ -76,9 +104,6 @@ $(document).ready(function () {
             var string = "z-index:" + z + "; top:" + t + ";";
             return string;
         });
-        $slides.each(function() {
-            $controls.append("<li><a href='#' class='page'></a></li>");
-        });
     };
     cardSlider(".mod-carousel-wrapper");
     
@@ -87,7 +112,7 @@ $(document).ready(function () {
             return false;
         } else {
             $(".slide").each(function() {
-                $(this).css("top", "+=30");
+                $(this).animate({top: "+=30"}, 300);
             });
             $(".slide").removeClass("second");
             $(".slide").removeClass("third");
@@ -107,7 +132,7 @@ $(document).ready(function () {
             $(".slide").removeClass("third");
             $(".slide.active").removeClass("active").prev().addClass("active").removeClass("off");
             $(".slide").each(function() {
-                $(this).css("top", "-=30");
+                $(this).animate({top: "-=30"}, 300);
             });
             $(".slide.active").prev().addClass("off");
             $(".slide.active").next().addClass("second").removeClass("off");
@@ -123,12 +148,12 @@ $(document).ready(function () {
 
         $(window).resize(function() {
             
-            var $doc = $(document);
-            var $win = $(window);
-            var $docHeight = $doc.height();
-            var $winHeight = $win.height();
-            var $docWidth = $doc.width();
-            var $winWidth = $win.width();
+//            var $doc = $(document);
+//            var $win = $(window);
+//            var $docHeight = $doc.height();
+//            var $winHeight = $win.height();
+//            var $docWidth = $doc.width();
+//            var $winWidth = $win.width();
             
         });
     

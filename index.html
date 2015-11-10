@@ -44,16 +44,17 @@
     </div>
 </header>
 <ul id="nav">
-    <li><a href="#" id="work" class="nav-link">Work</a></li>
-    <li><a href="#" id="contact" class="nav-link">Contact</a></li>
-    <li><a href="#" id="about" class="nav-link">About</a></li>
+    <li><a href="#" data-id="top" class="nav-link">Home</a></li>
+    <li><a href="#" data-id="recent-work" class="nav-link">Work</a></li>
+    <li><a href="#" data-id="contact" class="nav-link">Contact</a></li>
+    <li><a href="#" data-id="resume" class="nav-link">Resume</a></li>
 </ul>
 <!-- end: HEADER -->
 
 <!-- begin: WRAPPER -->
 <div id="wrapper" class="clearfix">
 
-    <div class="mod-wrapper mod-hero">
+    <div id="top" class="mod-wrapper mod-hero">
         <div class="text-wrapper">
             <h1>Welcome</h1>
             <h5>My name is Kevin Utoft</h5>
@@ -94,7 +95,7 @@
         </div>
     </div>
 
-    <div class="mod-wrapper dark mod-recent-work">
+    <div id="recent-work" class="mod-wrapper dark mod-recent-work">
         <header class="mod-header wow slideInLeft" data-wow-offset="-20">
             <h5>.Recent-Work</h5>
         </header>
@@ -151,7 +152,7 @@
     <li><a href="#"><i class="fi-social-twitter"></i></a></li>
     <li><a href="#"><i class="fi-social-linkedin"></i></a></li>
 </ul></div>
-<div class="medium-6 large-4 columns mod-wrapper mod-work-wrapper wow fadeInUp" data-src="assets/images/advance-website1.jpg" data-wow-duration="1.5s">
+<div class="medium-6 large-4 columns mod-wrapper mod-work-wrapper wow fadeInUp" data-wow-duration="1.5s">
     <a href="#" data-id="project-4" class="project-expand">
         <div class="image-wrapper">
             <img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="assets/images/placeholder-16x9.jpg" alt="nexstar">
@@ -168,7 +169,7 @@
     <li><a href="#"><i class="fi-social-twitter"></i></a></li>
     <li><a href="#"><i class="fi-social-linkedin"></i></a></li>
 </ul></div>
-<div class="medium-6 large-4 columns mod-wrapper mod-work-wrapper wow fadeInUp" data-src="assets/images/updates-bg.jpg" data-wow-duration="1.5s" data-wow-delay="0.5s">
+<div class="medium-6 large-4 columns mod-wrapper mod-work-wrapper wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.5s">
     <a href="#" data-id="project-5" class="project-expand">
         <div class="image-wrapper">
             <img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="assets/images/placeholder-16x9.jpg" alt="nexstar">
@@ -185,7 +186,7 @@
     <li><a href="#"><i class="fi-social-twitter"></i></a></li>
     <li><a href="#"><i class="fi-social-linkedin"></i></a></li>
 </ul></div>
-<div class="medium-6 large-4 columns mod-wrapper mod-work-wrapper wow fadeInUp" data-src="assets/images/budlight1.jpg" style="background-size: 160%;" data-wow-duration="1.5s" data-wow-delay="1s">
+<div class="medium-6 large-4 columns mod-wrapper mod-work-wrapper wow fadeInUp" style="background-size: 160%;" data-wow-duration="1.5s" data-wow-delay="1s">
     <a href="#" data-id="project-6" class="project-expand">
         <div class="image-wrapper">
             <img class="b-lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-src="assets/images/placeholder-16x9.jpg" alt="nexstar">
@@ -204,7 +205,7 @@
 </ul></div>        </div>
     </div>
 
-    <div class="mod-wrapper mod-contact mod-stepform dark">
+    <div id="contact" class="mod-wrapper mod-contact mod-stepform dark">
         <h3>get in touch</h3>
         <ul class="inline-list">
             <li><a href="#" class="toggle-form"><i class="fi-mail"></i></a></li>
@@ -245,7 +246,7 @@
         </form><!-- /simform -->
     </div>
 
-    <div class="mod-wrapper mod-resume">
+    <div id="resume" class="mod-wrapper mod-resume">
         <header class="mod-header wow slideInLeft" data-wow-offset="-20">
             <h5>.Resume</h5>
         </header>
@@ -308,7 +309,7 @@ identity/stationary, advertisements and more, that meet the customer’s objecti
 </div>
 <!-- end: WRAPPER -->
 
-<div id="project-1-content" data-id="1" class="page-wrapper project-wrapper">
+<!-- 1 --><div id="project-1-content" data-id="1" class="page-wrapper project-wrapper">
     <div class="mod-content-wrapper clearfix">
         <header class="mod-header">
             <a class="project-back" href="#"><i class="fi-x"></i></a>
@@ -373,7 +374,7 @@ identity/stationary, advertisements and more, that meet the customer’s objecti
 </ul>            </div>
         </div>
     </div>
-</div><div id="project-2-content" data-id="2" class="page-wrapper project-wrapper">
+</div><!-- 2 --><div id="project-2-content" data-id="2" class="page-wrapper project-wrapper">
     <div class="mod-content-wrapper clearfix">
         <header class="mod-header">
             <a class="project-back" href="#"><i class="fi-x"></i></a>
@@ -434,7 +435,7 @@ identity/stationary, advertisements and more, that meet the customer’s objecti
 </ul>            </div>
         </div>
     </div>
-</div><div id="project-3-content" data-id="3" class="page-wrapper project-wrapper">
+</div><!-- 3 --><div id="project-3-content" data-id="3" class="page-wrapper project-wrapper">
     <div class="mod-content-wrapper clearfix">
         <header class="mod-header">
             <a class="project-back" href="#"><i class="fi-x"></i></a>
@@ -493,8 +494,9 @@ identity/stationary, advertisements and more, that meet the customer’s objecti
     <li><a href="#"><i class="fi-social-twitter"></i></a></li>
     <li><a href="#"><i class="fi-social-linkedin"></i></a></li>
 </ul>            </div>
+        </div>
     </div>
-</div><div id="project-4-content" data-id="4" class="page-wrapper project-wrapper">
+</div><!-- 4 --><div id="project-4-content" data-id="4" class="page-wrapper project-wrapper">
     <div class="mod-content-wrapper clearfix">
         <header class="mod-header">
             <a class="project-back" href="#"><i class="fi-x"></i></a>
@@ -553,8 +555,9 @@ identity/stationary, advertisements and more, that meet the customer’s objecti
     <li><a href="#"><i class="fi-social-twitter"></i></a></li>
     <li><a href="#"><i class="fi-social-linkedin"></i></a></li>
 </ul>            </div>
+        </div>
     </div>
-</div><div id="project-5-content" data-id="5" class="page-wrapper project-wrapper">
+</div><!-- 5 --><div id="project-5-content" data-id="5" class="page-wrapper project-wrapper">
     <div class="mod-content-wrapper clearfix">
         <header class="mod-header">
             <a class="project-back" href="#"><i class="fi-x"></i></a>
@@ -613,8 +616,9 @@ identity/stationary, advertisements and more, that meet the customer’s objecti
     <li><a href="#"><i class="fi-social-twitter"></i></a></li>
     <li><a href="#"><i class="fi-social-linkedin"></i></a></li>
 </ul>            </div>
+        </div>
     </div>
-</div><div id="project-6-content" data-id="6" class="page-wrapper project-wrapper">
+</div><!-- 6 --><div id="project-6-content" data-id="6" class="page-wrapper project-wrapper">
     <div class="mod-content-wrapper clearfix">
         <header class="mod-header">
             <a class="project-back" href="#"><i class="fi-x"></i></a>
@@ -673,6 +677,137 @@ identity/stationary, advertisements and more, that meet the customer’s objecti
     <li><a href="#"><i class="fi-social-twitter"></i></a></li>
     <li><a href="#"><i class="fi-social-linkedin"></i></a></li>
 </ul>            </div>
+        </div>
+    </div>
+</div><!-- 7 --><div id="project-7-content" data-id="7" class="page-wrapper project-wrapper">
+    <div class="mod-content-wrapper clearfix">
+        <header class="mod-header">
+            <a class="project-back" href="#"><i class="fi-x"></i></a>
+            <div class="project-nav">
+                <a href="#" class="project-prev"><i class="icon icon--arrow-left"></i></a>
+                <a href="#" class="project-next"><i class="icon icon--arrow-right"></i></a>
+            </div>
+        </header>
+        <div class="mod-carousel-wrapper wow slideInLeft">
+            <ul class="slides-wrapper">
+                <li class="slide active">
+                    <div class="image-wrapper">
+                        <img src="assets/images/placeholder-16x9-v2.jpg" alt="nexstar">
+                        <span class="image" style="background-image: url('assets/images/latino-family.jpg');"></span>
+                    </div>
+                </li>
+                <li class="slide second">
+                    <div class="image-wrapper">
+                        <img src="assets/images/placeholder-16x9-v2.jpg" alt="nexstar">
+                        <span class="image b-lazy" style="background-image: url('assets/images/weather-bg-01.jpg');"></span>
+                    </div>
+                </li>
+                <li class="slide third">
+                    <div class="image-wrapper">
+                        <img src="assets/images/placeholder-16x9-v2.jpg" alt="nexstar">
+                        <span class="image b-lazy" style="background-image: url('assets/images/latino-family.jpg');"></span>
+                    </div>
+                </li>
+                <li class="slide">
+                    <div class="image-wrapper">
+                        <img src="assets/images/placeholder-16x9-v2.jpg" alt="nexstar">
+                        <span class="image b-lazy" style="background-image: url('assets/images/weather-bg-01.jpg');"></span>
+                    </div>
+                </li>
+                <li class="slide">
+                    <div class="image-wrapper">
+                        <img src="assets/images/placeholder-16x9-v2.jpg" alt="nexstar">
+                        <span class="image b-lazy" style="background-image: url('assets/images/latino-family.jpg');"></span>
+                    </div>
+                </li>
+                <li class="slide">
+                    <div class="image-wrapper">
+                        <img src="assets/images/placeholder-16x9-v2.jpg" alt="nexstar">
+                        <span class="image b-lazy" style="background-image: url('assets/images/weather-bg-01.jpg');"></span>
+                    </div>
+                </li>
+            </ul>
+            <div class="controls">
+                <a href="#" class="prev"><i class="icon icon--arrow-left"></i></a>
+                <a href="#" class="next"><i class="icon icon--arrow-right"></i></a>
+            </div>
+        </div>
+        <div class="row clearfix">
+            <div class="small-12 columns wow slideInRight">
+                <h3>Unidos Financial Solutions</h3>
+                <h6>Mobile App Design / Responsive Development</h6>
+                <p>Project Details. Project Details. Project Details. Project Details. Project Details. Project Details.</p>
+                <ul class="inline-list social-icons">
+    <li><a href="#"><i class="fi-social-facebook"></i></a></li>
+    <li><a href="#"><i class="fi-social-twitter"></i></a></li>
+    <li><a href="#"><i class="fi-social-linkedin"></i></a></li>
+</ul>            </div>
+        </div>
+    </div>
+</div><!-- 8 --><div id="project-8-content" data-id="8" class="page-wrapper project-wrapper">
+    <div class="mod-content-wrapper clearfix">
+        <header class="mod-header">
+            <a class="project-back" href="#"><i class="fi-x"></i></a>
+            <div class="project-nav">
+                <a href="#" class="project-prev"><i class="icon icon--arrow-left"></i></a>
+                <a href="#" class="project-next"><i class="icon icon--arrow-right"></i></a>
+            </div>
+        </header>
+        <div class="mod-carousel-wrapper wow slideInLeft">
+            <ul class="slides-wrapper">
+                <li class="slide active">
+                    <div class="image-wrapper">
+                        <img src="assets/images/placeholder-16x9-v2.jpg" alt="nexstar">
+                        <span class="image" style="background-image: url('assets/images/latino-family.jpg');"></span>
+                    </div>
+                </li>
+                <li class="slide second">
+                    <div class="image-wrapper">
+                        <img src="assets/images/placeholder-16x9-v2.jpg" alt="nexstar">
+                        <span class="image b-lazy" style="background-image: url('assets/images/weather-bg-01.jpg');"></span>
+                    </div>
+                </li>
+                <li class="slide third">
+                    <div class="image-wrapper">
+                        <img src="assets/images/placeholder-16x9-v2.jpg" alt="nexstar">
+                        <span class="image b-lazy" style="background-image: url('assets/images/latino-family.jpg');"></span>
+                    </div>
+                </li>
+                <li class="slide">
+                    <div class="image-wrapper">
+                        <img src="assets/images/placeholder-16x9-v2.jpg" alt="nexstar">
+                        <span class="image b-lazy" style="background-image: url('assets/images/weather-bg-01.jpg');"></span>
+                    </div>
+                </li>
+                <li class="slide">
+                    <div class="image-wrapper">
+                        <img src="assets/images/placeholder-16x9-v2.jpg" alt="nexstar">
+                        <span class="image b-lazy" style="background-image: url('assets/images/latino-family.jpg');"></span>
+                    </div>
+                </li>
+                <li class="slide">
+                    <div class="image-wrapper">
+                        <img src="assets/images/placeholder-16x9-v2.jpg" alt="nexstar">
+                        <span class="image b-lazy" style="background-image: url('assets/images/weather-bg-01.jpg');"></span>
+                    </div>
+                </li>
+            </ul>
+            <div class="controls">
+                <a href="#" class="prev"><i class="icon icon--arrow-left"></i></a>
+                <a href="#" class="next"><i class="icon icon--arrow-right"></i></a>
+            </div>
+        </div>
+        <div class="row clearfix">
+            <div class="small-12 columns wow slideInRight">
+                <h3>Unidos Financial Solutions</h3>
+                <h6>Mobile App Design / Responsive Development</h6>
+                <p>Project Details. Project Details. Project Details. Project Details. Project Details. Project Details.</p>
+                <ul class="inline-list social-icons">
+    <li><a href="#"><i class="fi-social-facebook"></i></a></li>
+    <li><a href="#"><i class="fi-social-twitter"></i></a></li>
+    <li><a href="#"><i class="fi-social-linkedin"></i></a></li>
+</ul>            </div>
+        </div>
     </div>
 </div>
 <!-- begin: FOOTER -->
