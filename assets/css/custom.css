@@ -29,14 +29,18 @@ a, .button {
     color: #009a00; }
 
 h1, h2, h3, h4, h5, h6 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 2px;
   color: inherit; }
 
 h1 {
-  font-weight: bold; }
+  font-weight: 900; }
 
 p {
+  font-family: 'Droid Serif', serif;
+  color: #444;
   line-height: 2; }
 
 #wrapper {
@@ -320,11 +324,28 @@ i:hover {
 
 /* ========== end: CAROUSEL ============== */
 .list {
-  margin-bottom: 2rem; }
+  color: #444;
+  font-family: 'Droid Serif', serif;
+  font-size: 0.875rem;
+  margin-bottom: 2rem;
+  list-style-type: none; }
   .list li {
-    margin-bottom: 0.75rem; }
+    margin-bottom: 0.75rem;
+    position: relative; }
     .list li:last-child {
       margin-bottom: 0; }
+    .list li:before {
+      content: "";
+      position: absolute;
+      top: 5%;
+      left: -15px;
+      width: 2px;
+      height: 90%;
+      background-color: #ccc;
+      -webkit-transition: 0.3s background-color ease-in-out;
+      transition: 0.3s background-color ease-in-out; }
+    .list li:hover:before {
+      background-color: #008000; }
 
 /* ====================
 MODULES
@@ -338,10 +359,7 @@ MODULES
   .mod-wrapper .mod-header {
     padding: 10px 20px; }
   .mod-wrapper .mod-header h5 {
-    text-align: left;
     font-size: 1rem;
-    text-transform: uppercase;
-    letter-spacing: 2px;
     font-weight: 400; }
   .mod-wrapper .mod-body {
     padding: 10px 0 0; }
@@ -446,69 +464,6 @@ MODULES
   .mod-contact.show .toggle-form {
     left: -245px; }
 
-.mod-work-wrapper {
-  height: 250px;
-  padding: 2rem;
-  background-size: cover;
-  background-position: center center;
-  overflow: hidden; }
-  .mod-work-wrapper a {
-    display: block; }
-    .mod-work-wrapper a .overlay {
-      background-image: url("../images/footer_lodyas.png");
-      opacity: 0.75;
-      -webkit-transition: 0.3s opacity ease-in-out;
-      -moz-transition: 0.3s opacity ease-in-out;
-      -ms-transition: 0.3s opacity ease-in-out;
-      -o-transition: 0.3s opacity ease-in-out;
-      transition: 0.3s opacity ease-in-out; }
-    .mod-work-wrapper a .text-wrapper {
-      color: #fff;
-      position: relative;
-      z-index: 10; }
-      .mod-work-wrapper a .text-wrapper h4 {
-        font-weight: bold;
-        margin-top: 1rem; }
-    .mod-work-wrapper a .select-project {
-      position: absolute;
-      right: -6px;
-      bottom: -10px;
-      padding: 22px 26px;
-      color: #fff;
-      background-color: #008000;
-      opacity: 0.7;
-      -webkit-transition: 0.3s all ease-in-out;
-      -moz-transition: 0.3s all ease-in-out;
-      -ms-transition: 0.3s all ease-in-out;
-      -o-transition: 0.3s all ease-in-out;
-      transition: 0.3s all ease-in-out;
-      -webkit-transform: rotate(15deg);
-      -moz-transform: rotate(15deg);
-      -ms-transform: rotate(15deg);
-      -o-transform: rotate(15deg);
-      transform: rotate(15deg); }
-      .mod-work-wrapper a .select-project i {
-        display: inline-block;
-        font-size: 1.3rem;
-        -webkit-transform: rotate(-15deg);
-        -moz-transform: rotate(-15deg);
-        -ms-transform: rotate(-15deg);
-        -o-transform: rotate(-15deg);
-        transform: rotate(-15deg);
-        -webkit-transition: 0.3s all ease-in-out;
-        -moz-transition: 0.3s all ease-in-out;
-        -ms-transition: 0.3s all ease-in-out;
-        -o-transition: 0.3s all ease-in-out;
-        transition: 0.3s all ease-in-out; }
-      .mod-work-wrapper a .select-project:hover {
-        opacity: 0.9; }
-        .mod-work-wrapper a .select-project:hover i {
-          color: #fff;
-          -webkit-animation: none 1s;
-          animation: none 1s; }
-    .mod-work-wrapper a:hover .overlay {
-      opacity: 0.45; }
-
 .mod-content-wrapper {
   position: absolute;
   color: #fff;
@@ -606,7 +561,8 @@ MODULES
 .mod-resume h5 {
   margin: 0; }
   .mod-resume h5 span {
-    color: #808080;
+    color: #ccc;
+    font-size: 0.875rem;
     font-style: italic; }
     .mod-resume h5 span:before {
       content: "-";
@@ -617,6 +573,65 @@ MODULES
   margin-bottom: 10px; }
   .mod-resume .date .line {
     margin: 0 5px; }
+
+.mod-work-wrapper a {
+  display: block; }
+  .mod-work-wrapper a .overlay {
+    background-image: url("../images/footer_lodyas.png");
+    opacity: 0.75;
+    -webkit-transition: 0.3s opacity ease-in-out;
+    -moz-transition: 0.3s opacity ease-in-out;
+    -ms-transition: 0.3s opacity ease-in-out;
+    -o-transition: 0.3s opacity ease-in-out;
+    transition: 0.3s opacity ease-in-out; }
+  .mod-work-wrapper a .text-wrapper {
+    color: #fff;
+    position: relative;
+    z-index: 10; }
+    .mod-work-wrapper a .text-wrapper h4 {
+      margin-top: 1rem;
+      margin-bottom: 0; }
+    .mod-work-wrapper a .text-wrapper h6 {
+      font-weight: 200; }
+  .mod-work-wrapper a .select-project {
+    position: absolute;
+    right: -6px;
+    bottom: -10px;
+    padding: 22px 26px;
+    color: #fff;
+    background-color: #008000;
+    opacity: 0.7;
+    -webkit-transition: 0.3s all ease-in-out;
+    -moz-transition: 0.3s all ease-in-out;
+    -ms-transition: 0.3s all ease-in-out;
+    -o-transition: 0.3s all ease-in-out;
+    transition: 0.3s all ease-in-out;
+    -webkit-transform: rotate(15deg);
+    -moz-transform: rotate(15deg);
+    -ms-transform: rotate(15deg);
+    -o-transform: rotate(15deg);
+    transform: rotate(15deg); }
+    .mod-work-wrapper a .select-project i {
+      display: inline-block;
+      font-size: 1.3rem;
+      -webkit-transform: rotate(-15deg);
+      -moz-transform: rotate(-15deg);
+      -ms-transform: rotate(-15deg);
+      -o-transform: rotate(-15deg);
+      transform: rotate(-15deg);
+      -webkit-transition: 0.3s all ease-in-out;
+      -moz-transition: 0.3s all ease-in-out;
+      -ms-transition: 0.3s all ease-in-out;
+      -o-transition: 0.3s all ease-in-out;
+      transition: 0.3s all ease-in-out; }
+    .mod-work-wrapper a .select-project:hover {
+      opacity: 0.9; }
+      .mod-work-wrapper a .select-project:hover i {
+        color: #fff;
+        -webkit-animation: none 1s;
+        animation: none 1s; }
+  .mod-work-wrapper a:hover .overlay {
+    opacity: 0.45; }
 
 .mod-recent-work {
   background-color: #171717; }

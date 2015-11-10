@@ -15,10 +15,7 @@ MODULES
         padding: 10px 20px;
     }
     .mod-header h5 {
-        text-align: left;
         font-size: 1rem;
-        text-transform: uppercase;
-        letter-spacing: 2px;
         font-weight: 400;
     }
     .mod-body {
@@ -164,87 +161,6 @@ MODULES
     }
 }
 
-.mod-work-wrapper {
-    height: 250px;
-    padding: 2rem;
-    background-size: cover;
-    background-position: center center;
-    overflow: hidden;
-    
-    a {
-        display: block;
-        
-        .overlay {
-            background-image: url("../images/footer_lodyas.png");
-            opacity: 0.75;
-
-            -webkit-transition: 0.3s opacity ease-in-out;
-            -moz-transition: 0.3s opacity ease-in-out;
-            -ms-transition: 0.3s opacity ease-in-out;
-            -o-transition: 0.3s opacity ease-in-out;
-            transition: 0.3s opacity ease-in-out;
-        }
-        .text-wrapper {
-            color: #fff;
-            position: relative;
-            z-index: 10;
-
-            h4 {
-                font-weight: bold;
-                margin-top: 1rem;
-            }
-        }
-        .select-project {
-            position: absolute;
-            right: -6px;
-            bottom: -10px;
-            padding: 22px 26px;
-            color: #fff;
-            background-color: $green;
-            opacity: 0.7;
-
-            -webkit-transition: 0.3s all ease-in-out;
-            -moz-transition: 0.3s all ease-in-out;
-            -ms-transition: 0.3s all ease-in-out;
-            -o-transition: 0.3s all ease-in-out;
-            transition: 0.3s all ease-in-out;
-
-            -webkit-transform: rotate(15deg);
-            -moz-transform: rotate(15deg);
-            -ms-transform: rotate(15deg);
-            -o-transform: rotate(15deg);
-            transform: rotate(15deg);
-
-            i {
-                display: inline-block;
-                font-size: 1.3rem;
-                -webkit-transform: rotate(-15deg);
-                -moz-transform: rotate(-15deg);
-                -ms-transform: rotate(-15deg);
-                -o-transform: rotate(-15deg);
-                transform: rotate(-15deg);
-
-                -webkit-transition: 0.3s all ease-in-out;
-                -moz-transition: 0.3s all ease-in-out;
-                -ms-transition: 0.3s all ease-in-out;
-                -o-transition: 0.3s all ease-in-out;
-                transition: 0.3s all ease-in-out;
-            }
-            &:hover {
-                opacity: 0.9;
-                i {
-                    color: #fff;
-                    -webkit-animation: none 1s;
-                    animation: none 1s;
-                }
-            }
-            } 
-
-        &:hover .overlay {
-            opacity: 0.45;
-        }
-    }
-}
 .mod-content-wrapper {
     position: absolute;
     color: #fff;
@@ -404,8 +320,10 @@ MODULES
     h5 {
         margin: 0;
         span {
-            color: #808080;
+            color: #ccc;
+            font-size: 0.875rem;
             font-style: italic;
+            
             &:before {
                 content: "-";
                 margin-right: 3px;
@@ -422,5 +340,5 @@ MODULES
     }
 }
 
-@import "modules/mod-recent-work";
+@import "modules/mod-work";
 @import "modules/mod-stepform";
