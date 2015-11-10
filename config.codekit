@@ -1153,57 +1153,75 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/includes\/projects\/_project-1.kit": {
+	"\/includes\/projects\/_advanced.kit": {
 		"fileType": 2048,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/includes\/projects\/_project-1.kit",
-		"outputAbbreviatedPath": "\/includes\/projects\/_project-1.html",
+		"inputAbbreviatedPath": "\/includes\/projects\/_advanced.kit",
+		"outputAbbreviatedPath": "\/includes\/projects\/_advanced.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/includes\/projects\/_project-2.kit": {
+	"\/includes\/projects\/_bud-light.kit": {
 		"fileType": 2048,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/includes\/projects\/_project-2.kit",
-		"outputAbbreviatedPath": "\/includes\/projects\/_project-2.html",
+		"inputAbbreviatedPath": "\/includes\/projects\/_bud-light.kit",
+		"outputAbbreviatedPath": "\/includes\/projects\/_bud-light.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/includes\/projects\/_project-3.kit": {
+	"\/includes\/projects\/_daily-post.kit": {
 		"fileType": 2048,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/includes\/projects\/_project-3.kit",
-		"outputAbbreviatedPath": "\/includes\/projects\/_project-3.html",
+		"inputAbbreviatedPath": "\/includes\/projects\/_daily-post.kit",
+		"outputAbbreviatedPath": "\/includes\/projects\/_daily-post.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/includes\/projects\/_project-4.kit": {
+	"\/includes\/projects\/_gmg.kit": {
 		"fileType": 2048,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/includes\/projects\/_project-4.kit",
-		"outputAbbreviatedPath": "\/includes\/projects\/_project-4.html",
+		"inputAbbreviatedPath": "\/includes\/projects\/_gmg.kit",
+		"outputAbbreviatedPath": "\/includes\/projects\/_gmg.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/includes\/projects\/_project-5.kit": {
+	"\/includes\/projects\/_lakana-studios.kit": {
 		"fileType": 2048,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/includes\/projects\/_project-5.kit",
-		"outputAbbreviatedPath": "\/includes\/projects\/_project-5.html",
+		"inputAbbreviatedPath": "\/includes\/projects\/_lakana-studios.kit",
+		"outputAbbreviatedPath": "\/includes\/projects\/_lakana-studios.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/includes\/projects\/_project-6.kit": {
+	"\/includes\/projects\/_nexstar.kit": {
 		"fileType": 2048,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/includes\/projects\/_project-6.kit",
-		"outputAbbreviatedPath": "\/includes\/projects\/_project-6.html",
+		"inputAbbreviatedPath": "\/includes\/projects\/_nexstar.kit",
+		"outputAbbreviatedPath": "\/includes\/projects\/_nexstar.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/includes\/projects\/_tcul.kit": {
+		"fileType": 2048,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/includes\/projects\/_tcul.kit",
+		"outputAbbreviatedPath": "\/includes\/projects\/_tcul.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/includes\/projects\/_unidos.kit": {
+		"fileType": 2048,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/includes\/projects\/_unidos.kit",
+		"outputAbbreviatedPath": "\/includes\/projects\/_unidos.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
