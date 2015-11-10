@@ -7,63 +7,12 @@ $(document).ready(function () {
     var $docWidth = $doc.width();
     var $winWidth = $win.width();
     
-    var $pages = $("#wrapper").children(".page-wrapper").length;
-    var $home = $("#home");
-    var $work = $("#work");
-    var $wrapper = $("#wrapper");
-    
-    $wrapper.css("width", ($pages * 100) + "%" );
-    $(".page-wrapper").css("width", $winWidth );
-    
-    $work.on("click", function(){
-        var $winWidth = $win.width();
-        $(".page-wrapper").removeClass("active");
-        $("#work-content").addClass("active");
-        $wrapper.animate({left: -$winWidth});
-        new WOW().init();
-        var bLazy = new Blazy({ 
-        });
+    $("#site-logo").on("click", function(){
+        $("#nav").toggleClass("show");
+        return false;
     });
-    $home.on("click", function(){
-        var $winWidth = $win.width();
-        $(".page-wrapper").removeClass("active");
-        $("#home-content").addClass("active");
-        $wrapper.animate({left: 0});
-        new WOW().init();
-    });
-//    $("#project-1").on("click", function(){
-//        var $winWidth = $win.width();
-//        $(".page-wrapper").removeClass("active");
-//        $("#project-1-content").addClass("active");
-//        $wrapper.animate({left: -($winWidth * 2)});
-//    });
-//    $("#project-2").on("click", function(){
-//        var $winWidth = $win.width();
-//        $(".page-wrapper").removeClass("active");
-//        $("#project-2-content").addClass("active");
-//        $wrapper.animate({left: -($winWidth * 3)});
-//    });
-//    $("#project-3").on("click", function(){
-//        var $winWidth = $win.width();
-//        $(".page-wrapper").removeClass("active");
-//        $("#project-3-content").addClass("active");
-//        $wrapper.animate({left: -($winWidth * 4)});
-//    });
-//    $("#project-4").on("click", function(){
-//        var $winWidth = $win.width();
-//        $(".page-wrapper").removeClass("active");
-//        $("#project-4-content").addClass("active");
-//        $wrapper.animate({left: -($winWidth * 5)});
-//    });
-//    $(".project-back").on("click", function(){
-//        var $winWidth = $win.width();
-//        $(".page-wrapper").removeClass("active");
-//        $("#work-content").addClass("active");
-//        $wrapper.animate({left: -$winWidth});
-//    });
     
-    
-    $(".toggle-form").on("click", function() {
+    $(".toggle-form").on("click", function(){
         $(".mod-contact").toggleClass("show");
         $(".simform").toggleClass("show");
         return false;
@@ -76,7 +25,6 @@ $(document).ready(function () {
         }, 2500);
     }
     
-    
     $(".project-wrapper").css("top", ($winHeight + 10));
     
     $(".project-expand").on("click", function(){
@@ -86,9 +34,86 @@ $(document).ready(function () {
         return false;
     });
      $(".project-back").on("click", function(){
-         var $content = $(this).parent().parent();
+         var $content = $(this).parent().parent().parent();
          $($content).removeClass("show");
          return false;
+    });
+    
+    $(".project-next").on("click", function(){
+        var $num = $(this).parent().parent().parent().parent().data("id");
+        var $next = "#project-" + ($num + 1) + "-content";
+        $(this).parent().parent().parent().removeClass("show");
+        $($next).addClass("show");
+        return false;
+    });
+    $(".project-prev").on("click", function(){
+        var $num = $(this).parent().parent().parent().parent().data("id");
+        var $prev = "#project-" + ($num - 1) + "-content";
+        $(this).parent().parent().parent().removeClass("show");
+        $($prev).addClass("show");
+        return false;
+    });
+    
+    $('.owl-carousel').owlCarousel( {
+        singleItem: true,
+        autoPlay: 6000,
+        lazyLoad: true,
+    }  
+    );
+    
+    var cardSlider = function(c) {
+        var $sWrapper = $(c).children(".slides-wrapper");
+        var $slides = $sWrapper.children(".slide");
+        var $controls = $(c).children(".controls");
+        var $h = $(".mod-carousel-wrapper").children(".slides-wrapper").children(".slide").height() + "px";
+        
+        $sWrapper.css("height", $h);
+        $slides.attr("style", function(i) {
+            
+            var z = 20 - i,
+                t = (-i * 30) + "px";
+            
+            var string = "z-index:" + z + "; top:" + t + ";";
+            return string;
+        });
+        $slides.each(function() {
+            $controls.append("<li><a href='#' class='page'></a></li>");
+        });
+    };
+    cardSlider(".mod-carousel-wrapper");
+    
+    $(".mod-carousel-wrapper .controls .next").on("click", function() {
+        if ( $(".slide:last-child").hasClass("active") ) {
+            return false;
+        } else {
+            $(".slide").each(function() {
+                $(this).css("top", "+=30");
+            });
+            $(".slide").removeClass("second");
+            $(".slide").removeClass("third");
+            $(".slide.active").removeClass("active").next().addClass("active").removeClass("off");
+            $(".slide.active").prev().addClass("off");
+            $(".slide.active").next().addClass("second").removeClass("off");
+            $(".slide.active").next().next().addClass("third").removeClass("off");
+
+            return false;
+        }
+    });
+    $(".mod-carousel-wrapper .controls .prev").on("click", function() {
+        if ( $(".slide:first-child").hasClass("active") ) {
+            return false;
+        } else {
+            $(".slide").removeClass("second");
+            $(".slide").removeClass("third");
+            $(".slide.active").removeClass("active").prev().addClass("active").removeClass("off");
+            $(".slide").each(function() {
+                $(this).css("top", "-=30");
+            });
+            $(".slide.active").prev().addClass("off");
+            $(".slide.active").next().addClass("second").removeClass("off");
+            $(".slide.active").next().next().addClass("third").removeClass("off");
+            return false;
+        }
     });
     
     // =====
@@ -104,12 +129,6 @@ $(document).ready(function () {
             var $winHeight = $win.height();
             var $docWidth = $doc.width();
             var $winWidth = $win.width();
-            
-        	$(".page-wrapper").css("width", $winWidth );
-            
-            if ( $work.hasClass("active") === true ) {
-                $wrapper.css("left", -$winWidth);
-            }
             
         });
     
