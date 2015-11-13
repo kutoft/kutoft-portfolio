@@ -119,6 +119,37 @@ i:hover {
 
 /* ========== begin: CAROUSEL ============== */
 .owl-carousel {
+    margin-left: 0;
+    list-style-type: none;
+    
+    .device-image {
+        width: 100%;
+    }
+    .imac-overlay {
+        position: absolute;
+        width: 62.3%;
+        height: 58.2%;
+        top: 11.2%;
+        left: 18.8%;
+        overflow-y: auto;
+    }
+    .ipad-overlay {
+        position: absolute;
+        width: 35.3%;
+        height: 78.2%;
+        top: 11.2%;
+        left: 32.3%;
+        overflow-y: auto;
+    }
+    .iphone-overlay {
+        position: absolute;
+        width: 23.5%;
+        height: 69.2%;
+        top: 16.2%;
+        left: 38.4%;
+        overflow-y: auto;
+    }
+    
     .owl-pagination {
         .owl-page {
             span {

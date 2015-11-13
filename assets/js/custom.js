@@ -85,7 +85,7 @@ $(document).ready(function () {
     
     $('.owl-carousel').owlCarousel( {
         singleItem: true,
-        autoPlay: 6000,
+        autoPlay: 12000,
         lazyLoad: true,
     }  
     );
@@ -93,7 +93,7 @@ $(document).ready(function () {
     var cardSlider = function(c) {
         var $sWrapper = $(c).children(".slides-wrapper");
         var $slides = $sWrapper.children(".slide");
-        var $h = $(".mod-carousel-wrapper").children(".slides-wrapper").children(".slide").height() + "px";
+        var $h = $sWrapper.children(".slide").height() + "px";
         
         $sWrapper.css("height", $h);
         $slides.attr("style", function(i) {
@@ -105,7 +105,9 @@ $(document).ready(function () {
             return string;
         });
     };
-    cardSlider(".mod-carousel-wrapper");
+    cardSlider("#unidos-carousel");
+    cardSlider("#daily-carousel");
+    cardSlider("#lakana-carousel");
     
     $(".mod-carousel-wrapper .controls .next").on("click", function() {
         if ( $(".slide:last-child").hasClass("active") ) {
