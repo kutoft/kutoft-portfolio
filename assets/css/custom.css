@@ -275,24 +275,50 @@ i:hover {
 /* ========== begin: TABS ========== */
 /* ========== end: TABS ========== */
 /* ========== begin: CAROUSEL ============== */
-.owl-carousel .owl-pagination .owl-page span {
-  position: relative;
-  width: 45px;
-  height: 3px;
-  border-radius: 0;
-  overflow: hidden; }
-  .owl-carousel .owl-pagination .owl-page span:after {
-    content: "";
+.owl-carousel {
+  margin-left: 0;
+  list-style-type: none; }
+  .owl-carousel .device-image {
+    width: 100%; }
+  .owl-carousel .imac-overlay {
     position: absolute;
-    top: 0;
+    width: 62.3%;
+    height: 58.2%;
+    top: 11.2%;
+    left: 18.8%;
+    overflow-y: auto; }
+  .owl-carousel .ipad-overlay {
+    position: absolute;
+    width: 35.3%;
+    height: 78.2%;
+    top: 11.2%;
+    left: 32.3%;
+    overflow-y: auto; }
+  .owl-carousel .iphone-overlay {
+    position: absolute;
+    width: 23.5%;
+    height: 69.2%;
+    top: 16.2%;
+    left: 38.4%;
+    overflow-y: auto; }
+  .owl-carousel .owl-pagination .owl-page span {
+    position: relative;
     width: 45px;
     height: 3px;
-    left: -45px;
-    background-color: #008000;
-    -webkit-transition: 0.6s left ease-in-out;
-    transition: 0.6s left ease-in-out; }
-.owl-carousel .owl-pagination .owl-page.active span:after {
-  left: 0; }
+    border-radius: 0;
+    overflow: hidden; }
+    .owl-carousel .owl-pagination .owl-page span:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      width: 45px;
+      height: 3px;
+      left: -45px;
+      background-color: #008000;
+      -webkit-transition: 0.6s left ease-in-out;
+      transition: 0.6s left ease-in-out; }
+  .owl-carousel .owl-pagination .owl-page.active span:after {
+    left: 0; }
 
 /* ========== end: CAROUSEL ============== */
 .list {
@@ -603,6 +629,10 @@ MODULES
   color: #fff;
   padding: 0;
   width: 100%; }
+  .mod-content-wrapper .row-container {
+    margin-top: 50px; }
+  .mod-content-wrapper h3 {
+    margin-top: 15px; }
   .mod-content-wrapper p {
     color: #fff; }
   .mod-content-wrapper .mod-header {
