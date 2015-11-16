@@ -838,6 +838,28 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/assets\/images\/projects\/daily-post\/daily-post-mobile.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4.92134e+06,
+		"inputAbbreviatedPath": "\/assets\/images\/projects\/daily-post\/daily-post-mobile.png",
+		"outputAbbreviatedPath": "\/assets\/images\/projects\/daily-post\/daily-post-mobile.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/images\/projects\/daily-post\/daily-post-tablet.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.07563e+07,
+		"inputAbbreviatedPath": "\/assets\/images\/projects\/daily-post\/daily-post-tablet.png",
+		"outputAbbreviatedPath": "\/assets\/images\/projects\/daily-post\/daily-post-tablet.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/images\/projects\/daily-post\/daily-post-web.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -860,6 +882,39 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/assets\/images\/projects\/gmg\/ksat-mobile.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2.24933e+06,
+		"inputAbbreviatedPath": "\/assets\/images\/projects\/gmg\/ksat-mobile.png",
+		"outputAbbreviatedPath": "\/assets\/images\/projects\/gmg\/ksat-mobile.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/images\/projects\/gmg\/ksat-tablet.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4.3323e+06,
+		"inputAbbreviatedPath": "\/assets\/images\/projects\/gmg\/ksat-tablet.png",
+		"outputAbbreviatedPath": "\/assets\/images\/projects\/gmg\/ksat-tablet.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/images\/projects\/gmg\/ksat-web.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.52388e+07,
+		"inputAbbreviatedPath": "\/assets\/images\/projects\/gmg\/ksat-web.png",
+		"outputAbbreviatedPath": "\/assets\/images\/projects\/gmg\/ksat-web.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/images\/projects\/gmg\/weather-bg-01.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -867,6 +922,28 @@
 		"initialSize": 501179,
 		"inputAbbreviatedPath": "\/assets\/images\/projects\/gmg\/weather-bg-01.jpg",
 		"outputAbbreviatedPath": "\/assets\/images\/projects\/gmg\/weather-bg-01.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/images\/projects\/lakana-studios\/lakana-studios-mobile.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3.58295e+06,
+		"inputAbbreviatedPath": "\/assets\/images\/projects\/lakana-studios\/lakana-studios-mobile.png",
+		"outputAbbreviatedPath": "\/assets\/images\/projects\/lakana-studios\/lakana-studios-mobile.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/images\/projects\/lakana-studios\/lakana-studios-tablet.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4.50891e+06,
+		"inputAbbreviatedPath": "\/assets\/images\/projects\/lakana-studios\/lakana-studios-tablet.png",
+		"outputAbbreviatedPath": "\/assets\/images\/projects\/lakana-studios\/lakana-studios-tablet.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -1568,6 +1645,15 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/includes\/projects\/_unidos.kit",
 		"outputAbbreviatedPath": "\/includes\/projects\/_unidos.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/includes\/ui\/_ui-carousel.kit": {
+		"fileType": 2048,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/includes\/ui\/_ui-carousel.kit",
+		"outputAbbreviatedPath": "\/includes\/ui\/_ui-carousel.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},

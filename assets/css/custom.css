@@ -269,6 +269,12 @@ i:hover {
 
 /* ========== end: IMAGES ========== */
 /* ========== begin: BUTTONS ========== */
+.button.primary, a.button.primary {
+  color: #fff;
+  background-color: #008000; }
+.button:hover, a.button:hover {
+  opacity: 0.8; }
+
 /* ========== end: BUTTONS ========== */
 /* ========== begin: DROPDOWNS/SELECT ========== */
 /* ========== end: DROPDOWNS/SELECT ========== */
@@ -634,7 +640,14 @@ MODULES
   .mod-content-wrapper h3 {
     margin-top: 15px; }
   .mod-content-wrapper p {
-    color: #fff; }
+    color: #fff;
+    font-size: 0.875rem;
+    line-height: 1.6; }
+  .mod-content-wrapper .button {
+    vertical-align: middle;
+    margin-right: 20px; }
+  .mod-content-wrapper .social-icons {
+    vertical-align: middle; }
   .mod-content-wrapper .mod-header {
     position: relative;
     z-index: 100;

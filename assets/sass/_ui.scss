@@ -104,6 +104,17 @@ i:hover {
 
 
 /* ========== begin: BUTTONS ========== */
+.button, a.button {
+    
+    &.primary {
+        color: #fff;
+        background-color: $green;
+    }
+    
+    &:hover {
+        opacity: 0.8;
+    }
+} 
 
 /* ========== end: BUTTONS ========== */
 
