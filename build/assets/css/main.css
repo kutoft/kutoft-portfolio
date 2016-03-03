@@ -5722,7 +5722,7 @@ COLORS
       top: 62.5%; }
     /* line 54, /Users/kutoft/GitHub/kutoft-portfolio/src/sass/_640.scss */
     .mod-hero.hero-small {
-      height: 275px; } }
+      height: 250px; } }
 
 @media only screen and (min-width: 768px) {
   /* ====================
@@ -5790,4 +5790,4 @@ COLORS
     height: 500px; }
     /* line 103, /Users/kutoft/GitHub/kutoft-portfolio/src/sass/_1024.scss */
     .mod-hero.hero-small {
-      height: 350px; } }
+      height: 300px; } }
