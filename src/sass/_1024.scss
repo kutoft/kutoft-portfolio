@@ -96,3 +96,11 @@
         }
     }
 }
+
+.mod-hero {
+    height: 500px;
+    
+    &.hero-small {
+       height: 350px; 
+    }
+}

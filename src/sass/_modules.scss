@@ -54,7 +54,7 @@ MODULES
 
 .mod-hero {
     background-size: cover;
-    height: 500px;
+    height: 300px;
     position: relative;
     background-position: center center;
     margin-top: -50px;
@@ -62,7 +62,7 @@ MODULES
     .text-wrapper {
         text-align: center;
         position: absolute;
-        top: 50%;
+        top: 75%;
         left: 50%;
         width: 100%;
         min-width: 250px;
@@ -97,7 +97,7 @@ MODULES
         opacity: 0.75;
     }
     &.hero-small {
-        height: 300px;
+        height: 200px;
         
         .text-wrapper {
             top: auto;
