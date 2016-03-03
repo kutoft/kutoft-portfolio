@@ -1,0 +1,45 @@
+/* ====================
+640 AND UP
+==================== */
+
+// ADD ALL 641PX AND HIGHER SCREEN STYLES HERE
+.project-wrapper {
+    overflow-y: auto;
+}
+
+#select-wrapper {
+
+    .select-placeholder {
+        font-size: 3rem;
+        &:after {
+            content: "";
+            position: relative;
+            top: 35px;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-top: 10px solid $green;
+        }
+    }
+    .select-options {
+        li {
+        }
+    }
+}
+
+.mod-recent-work {
+    background-color: #f9f9f9;
+    
+    .mod-work-wrapper {
+        padding: 0.5rem 1rem 1.5rem;
+        height: auto;
+        
+        a {
+            .text-wrapper {
+
+                h4 {
+                    font-size: 1.3rem;
+                }
+            }
+        }
+    }
+}
