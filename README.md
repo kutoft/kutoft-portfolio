@@ -1,3 +1,0 @@
-# starter
-
-Starter Project Folder
