@@ -1,0 +1,246 @@
+/* ====================
+USER INTERFACE
+==================== */
+
+// ADD ALL CUSTOM USER INTERFACE STYLES HERE (SOME EXAMPLES BELOW)
+
+/* ========== begin: ICONS ========== */
+.social-icons {
+    font-size: 1.4rem !important;
+    position: relative;
+    display: inline-block;
+    overflow: visible;
+    
+    li {
+        opacity: 1;
+        position: relative;
+        top: 0;
+        
+        -webkit-transition: 0.3s opacity ease-in-out 0.2s, 0.3s top ease-in-out 0.2s;
+        -moz-transition: 0.3s opacity ease-in-out 0.2s, 0.3s top ease-in-out 0.2s;
+        -ms-transition: 0.3s opacity ease-in-out 0.2s, 0.3s top ease-in-out 0.2s;
+        -o-transition: 0.3s opacity ease-in-out 0.2s, 0.3s top ease-in-out 0.2s;
+        transition: 0.3s opacity ease-in-out 0.2s, 0.3s top ease-in-out 0.2s;
+        
+        &:nth-child(2) {
+            -webkit-transition-delay: 0.1s;
+            -moz-transition-delay: 0.1s;
+            -ms-transition-delay: 0.1s;
+            -o-transition-delay: 0.1s;
+            transition-delay: 0.1s;
+        }
+        &:nth-child(3) {
+            -webkit-transition-delay: 0s;
+            -moz-transition-delay: 0s;
+            -ms-transition-delay: 0s;
+            -o-transition-delay: 0s;
+            transition-delay: 0s;
+        }
+        a {
+            color: #222;
+            
+            -webkit-transition: 0.3s all ease-in-out;
+            -moz-transition: 0.3s all ease-in-out;
+            -ms-transition: 0.3s all ease-in-out;
+            -o-transition: 0.3s all ease-in-out;
+            transition: 0.3s all ease-in-out;
+            
+            &:hover {
+                color: $green;
+                -webkit-animation: swing 1s;
+                animation: swing 1s;
+            }
+        }
+    }
+}
+/* ========== end: ICONS ========== */
+i {
+    -webkit-transition: 0.3s all ease-in-out;
+    -moz-transition: 0.3s all ease-in-out;
+    -ms-transition: 0.3s all ease-in-out;
+    -o-transition: 0.3s all ease-in-out;
+    transition: 0.3s all ease-in-out;
+}
+i:hover {
+    color: $green;
+    -webkit-animation: swing 1s;
+    animation: swing 1s;
+}
+
+/* ========== begin: IMAGES ========== */
+.image-wrapper {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    
+    img {
+        max-width: 100%;
+        height: auto;
+        opacity: 0;
+    }
+    .image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-size: cover;
+        background-position: center center;
+        
+//        -webkit-transform: rotate(-15deg) scale(1.45);
+//        -moz-transform: rotate(-15deg) scale(1.45);
+//        -ms-transform: rotate(-15deg) scale(1.45);
+//        -o-transform: rotate(-15deg) scale(1.45);
+//        transform: rotate(-15deg) scale(1.45);
+        
+        -webkit-transition: 0.3s all ease-in-out;
+        -moz-transition: 0.3s all ease-in-out;
+        -ms-transition: 0.3s all ease-in-out;
+        -o-transition: 0.3s all ease-in-out;
+        transition: 0.3s all ease-in-out;
+    }
+}
+/* ========== end: IMAGES ========== */
+
+
+/* ========== begin: BUTTONS ========== */
+.button, a.button {
+    text-transform: uppercase;
+    font-weight: 600;
+} 
+
+/* ========== end: BUTTONS ========== */
+
+
+/* ========== begin: DROPDOWNS/SELECT ========== */
+
+/* ========== end: DROPDOWNS/SELECT ========== */
+
+
+/* ========== begin: TABS ========== */
+
+/* ========== end: TABS ========== */
+
+/* ========== begin: CAROUSEL ============== */
+.owl-carousel {
+    margin-left: 0;
+    list-style-type: none;
+    
+    .item {
+        p {
+            margin-bottom: 0;
+        }
+    }
+    .device-image {
+        width: 100%;
+    }
+    .imac-overlay {
+        position: absolute;
+        width: 62.3%;
+        height: 58.2%;
+        top: 11.2%;
+        left: 18.8%;
+        overflow-y: auto;
+    }
+    .ipad-overlay {
+        position: absolute;
+        width: 35.3%;
+        height: 78.2%;
+        top: 11.2%;
+        left: 32.3%;
+        overflow-y: auto;
+    }
+    .iphone-overlay {
+        position: absolute;
+        width: 23%;
+        height: 69.2%;
+        top: 17.1%;
+        left: 38.6%;
+        overflow-y: auto;
+    }
+    
+    .owl-pagination {
+        .owl-page {
+            span {
+                position: relative;
+                width: 45px;
+                height: 3px;
+                border-radius: 0;
+                overflow: hidden;
+                
+                &:after {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    width: 45px;
+                    height: 3px;
+                    left: -45px;
+                    background-color: $green;
+                    
+                    -webkit-transition: 0.6s left ease-in-out;
+                    transition: 0.6s left ease-in-out;
+                }
+            }
+            &.active span:after {
+                left: 0;
+            }
+        }
+    }
+    &.no-overflow {
+        .imac-overlay {
+            overflow-y: visible;
+        }
+        .ipad-overlay {
+            overflow-y: visible;
+        }
+        .iphone-overlay {
+            overflow-y: visible;
+        }
+    }
+}
+/* ========== end: CAROUSEL ============== */
+
+.list {
+    color: #444;
+    font-family: 'Droid Serif', serif;
+    font-size: 0.875rem;
+    margin-bottom: 2rem;
+    list-style-type: none;
+    
+    li {
+        margin-bottom: 0.75rem;
+        position: relative;
+        
+        &:last-child {
+            margin-bottom: 0;
+        }
+        
+        &:before {
+            content: "";
+            position: absolute;
+            top: 5%;
+            left: -15px;
+            width: 2px;
+            height: 90%;
+            background-color: #ccc;
+            
+            -webkit-transition: 0.3s background-color ease-in-out;
+            transition: 0.3s background-color ease-in-out;
+        }
+        
+        &:hover:before {
+            background-color: $green;
+        }
+    }
+    &.inline {
+        li {
+            display: inline-block;
+            padding: 0 10px;
+            margin-bottom: 0;
+            
+            &:before {
+                content: none;
+            }
+        }
+    }
+}
