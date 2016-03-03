@@ -43,3 +43,15 @@
         }
     }
 }
+
+.mod-hero {
+    height: 400px;
+    
+    .text-wrapper {
+        top: 62.5%;
+    }
+    
+    &.hero-small {
+       height: 275px; 
+    }
+}
