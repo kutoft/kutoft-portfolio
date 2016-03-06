@@ -1,8 +1,14 @@
 @charset 'utf-8';
 
+@import 'normalize';
+
 @import 'settings';
 @import 'foundation';
+@import 'foundation-icons.scss';
 @import 'motion-ui';
+
+@import 'owl.carousel';
+@import 'owl.theme';
 
 @include foundation-global-styles;
 @include foundation-grid;
