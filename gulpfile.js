@@ -1,5 +1,4 @@
 var gulp = require('gulp'),
-    bower = require('gulp-bower'),
     sass = require('gulp-sass'),
     bourbon = require('node-bourbon').includePaths,
     kit = require('gulp-kit');
@@ -31,8 +30,8 @@ gulp.task('sass', function() {
   return gulp.src('./src/sass/main.scss')
     .pipe(sass({
       includePaths: [].concat(bourbon, sassPaths),
-      style: 'expanded', 
-      sourceComments: 'map', 
+      style: 'expanded',
+      sourceComments: 'map',
       errLogToConsole: true
     }))
     .pipe(autoprefixer('last 2 version', 'ie >= 9'))
@@ -58,4 +57,3 @@ gulp.task('watch', function() {
 gulp.task('default', ['kitInclude', 'sass', 'watch'], function() {
 
 });
-
