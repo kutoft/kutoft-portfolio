@@ -8,9 +8,9 @@ MODULES
     border: 0;
     padding: 3rem 1rem;
     margin-right: auto;
-    margin-left: auto; 
+    margin-left: auto;
     color: #222;
-    
+
     .mod-header {
         padding-top: 1rem;
     }
@@ -23,26 +23,26 @@ MODULES
     .mod-body {
         padding: 10px 0 0;
     }
-    .mod-footer {  
-        
+    .mod-footer {
+
         .button {
-            margin-right: 0;    
+            margin-right: 0;
             h5 {
                 font-size: 0.875rem;
                 font-weight: 800;
                 text-transform: uppercase;
                 margin-bottom: 0;
-            }    
+            }
         }
     }
-    
+
     &.light {
         background-color: #eee;
     }
-    
+
     &.dark {
         background-color: #2e2e2e;
-        
+
         .mod-header h5 {
             color: #bbb;
         }
@@ -58,7 +58,7 @@ MODULES
     position: relative;
     background-position: center center;
     margin-top: -50px;
-    
+
     .text-wrapper {
         text-align: center;
         position: absolute;
@@ -68,19 +68,19 @@ MODULES
         min-width: 250px;
         max-width: 700px;
         z-index: 99;
-        
+
         transform: translate(-50%, -50%);
-        
+
         .text-left {
             position: relative;
-            
+
             .back-button {
                 position: absolute;
                 right: 0;
                 bottom: -47px;
             }
         }
-        
+
         h1, h2, h3 {
             color: #fff;
             line-height: 1.2;
@@ -98,13 +98,13 @@ MODULES
     }
     &.hero-small {
         height: 200px;
-        
+
         .text-wrapper {
             top: auto;
             bottom: 10px;
-            
+
             transform: translate(-50%, 0);
-            
+
             h1 {
                 display: inline-block;
             }
@@ -121,7 +121,7 @@ MODULES
     text-align: center;
     padding: 3.5rem 1rem;
     position: relative;
-    
+
     h3 {
         color: #eee;
         text-transform: uppercase;
@@ -129,7 +129,7 @@ MODULES
         margin: 0 10px;
         vertical-align: middle;
         opacity: 1;
-        
+
         -webkit-transition: 0.5s opacity ease-in-out;
         -moz-transition: 0.5s opacity ease-in-out;
         -ms-transition: 0.5s opacity ease-in-out;
@@ -142,10 +142,10 @@ MODULES
         margin: 0 10px;
         vertical-align: middle;
         overflow: visible;
-        
+
         li:last-child {
             opacity: 1;
-            
+
             -webkit-transition: 0.5s opacity ease-in-out;
             -moz-transition: 0.5s opacity ease-in-out;
             -ms-transition: 0.5s opacity ease-in-out;
@@ -157,7 +157,7 @@ MODULES
         position: relative;
         left: 0;
         opacity: 1;
-        
+
         -webkit-transition: 0.5s left ease-in-out;
         -moz-transition: 0.5s left ease-in-out;
         -ms-transition: 0.5s left ease-in-out;
@@ -168,9 +168,9 @@ MODULES
         height: 0;
         max-height: 600px;
         overflow: hidden;
-        
+
         transition: 0.6s height ease-in-out;
-        
+
         &.open {
             height: 325px;
         }
@@ -184,7 +184,7 @@ MODULES
             min-height: 10px;
         }
     }
-    
+
     &.show {
         h3 {
             opacity: 0;
@@ -195,7 +195,7 @@ MODULES
             pointer-events: none;
         }
         .toggle-form {
-            left: -245px;
+            left: -142px;
         }
     }
 }
@@ -204,7 +204,7 @@ MODULES
 //    .owl-carousel {
 //        list-style-type: none;
 //        margin-left: 0;
-//        
+//
 //        li {
 //        }
 //        .owl-item .image {
@@ -237,47 +237,47 @@ MODULES
     max-width: 90%;
     margin: 0 auto;
     margin-top: 75px;
-    
+
     .slides-wrapper {
         position: relative;
         margin-left: 0;
         list-style-type: none;
-        
+
         .slide {
             position: absolute;
             left: 0;
             right: 0;
             top: 0;
             opacity: 0;
-            
+
             -webkit-transform: scale(0.65);
             transform: scale(0.65);
             transform-origin: top;
-            
+
             -webkit-transition: 0.3s all ease-in-out;
             transition: 0.3s all ease-in-out;
-            
+
             .image-wrapper .image {
                 -webkit-transform: none;
                 transform: none;
             }
-            
+
             &.active {
                 opacity: 1;
                 box-shadow: 0 0 50px #000;
-                
+
                 -webkit-transform: scale(1);
                 transform: scale(1);
             }
             &.second {
                 opacity: 0.55;
-                
+
                 -webkit-transform: scale(0.85);
                 transform: scale(0.85);
             }
             &.third {
                 opacity: 0.2;
-                
+
                 -webkit-transform: scale(0.7);
                 transform: scale(0.7);
             }
@@ -295,7 +295,7 @@ MODULES
         left: 5%;
         width: 90%;
         z-index: 21;
-        
+
         .next, .prev {
             font-size: 3rem;
             position: absolute;
@@ -314,7 +314,7 @@ MODULES
             color: #ccc;
             font-size: 0.875rem;
             font-style: italic;
-            
+
             &:before {
                 content: "-";
                 margin-right: 3px;
