@@ -39,7 +39,11 @@ gulp.task('styles', function() {
     .pipe(sourcemaps.init())
     .pipe(sass({
       includePaths: [].concat(bourbon, sassPaths),
+<<<<<<< HEAD
       style: 'compressed',
+=======
+      style: 'expanded',
+>>>>>>> origin/master
       sourceComments: 'map',
       errLogToConsole: true
     }))

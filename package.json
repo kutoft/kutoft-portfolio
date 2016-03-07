@@ -6,6 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+<<<<<<< HEAD
   "author": "",
   "license": "ISC",
   "devDependencies": {
@@ -25,4 +26,28 @@
     "imagemin-pngquant": "^4.2.2",
     "node-bourbon": "^4.2.3"
   }
+=======
+  "author": "Kevin Utoft",
+  "license": "ISC",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-livereload": "^3.8.1",
+    "gulp-notify": "^2.2.0",
+    "gulp-connect": "^3.1.0",
+    "gulp-kit": "^0.3.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.2.0",
+    "node-bourbon": "^4.2.3"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kutoft/kutoft-portfolio.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kutoft/kutoft-portfolio/issues"
+  },
+  "homepage": "https://github.com/kutoft/kutoft-portfolio#readme"
+>>>>>>> origin/master
 }
