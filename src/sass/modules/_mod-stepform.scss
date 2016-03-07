@@ -9,24 +9,24 @@
     opacity: 0;
     top: 46%;
     left: 0%;
-    
+
     -webkit-transform: translate(-50%, -50%);
     -moz-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     -o-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    
+
     -webkit-transition: 0.3s opacity ease-in-out, 0.5s left ease-in-out;
     -moz-transition: 0.3s opacity ease-in-out, 0.5s left ease-in-out;
     -ms-transition: 0.3s opacity ease-in-out, 0.5s left ease-in-out;
     -o-transition: 0.3s opacity ease-in-out, 0.5s left ease-in-out;
     transition: 0.3s opacity ease-in-out, 0.5s left ease-in-out;
-    
-    
+
+
     &.show {
         opacity: 1;
-        left: 51.25%;
-        
+        left: 50%;
+
         -webkit-transition: 0.3s opacity ease-in-out 0.4s, 0.3s left ease-in-out 0.3s;
         -moz-transition: 0.3s opacity ease-in-out 0.4s, 0.3s left ease-in-out 0.3s;
         -ms-transition: 0.3s opacity ease-in-out 0.4s, 0.3s left ease-in-out 0.3s;
@@ -119,7 +119,7 @@
 .mod-stepform .questions textarea {
 	display: block;
 	margin: 0.3em 0 0 0;
-	padding: 0.5em 2.75rem 0.5em 0.7em;
+	padding: 0.5em 2.75rem 0.5em 2.75rem;
 	width: 100%;
 	border: 1px solid $green;
     background-color: transparent;
@@ -149,10 +149,14 @@
 }
 
 /* Next question button */
+.mod-stepform .controls {
+	position: relative;
+	z-index: 101;
+}
 .mod-stepform .next {
 	position: absolute;
 	right: 0;
-	top: 1.95rem; /* padding-bottom of form plus progress bar height */
+	top: -2.35rem; /* padding-bottom of form plus progress bar height */
 	display: block;
 	padding: 0;
 	width: 3rem;
@@ -205,7 +209,7 @@
 .mod-stepform .simform .progress {
 	width: 0%;
 	height: 0.15em;
-	background: rgba($green,1);
+	background: rgba(#888,1);
 	-webkit-transition: width 0.4s ease-in-out;
 	transition: width 0.4s ease-in-out;
     border-width: 0;
@@ -245,7 +249,7 @@
 
 .mod-stepform .simform .number span {
 	float: right;
-	width: 40%;
+	width: 50%;
 	text-align: center;
 }
 

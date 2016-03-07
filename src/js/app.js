@@ -13,6 +13,10 @@ $(document).ready(function () {
         $("#menu").toggleClass("open");
         return false;
     });
+    $("#nav li a").on("click", function(){
+        $("#menu").removeClass("open");
+        return false;
+    });
 
     $(".nav-link").on("click", function() {
         var $data = $(this).data("id");
