@@ -28,11 +28,11 @@
 
 .mod-recent-work {
     background-color: #f9f9f9;
-
+    
     .mod-work-wrapper {
         padding: 0.5rem 1rem 1.5rem;
         height: auto;
-
+        
         a {
             .text-wrapper {
 
@@ -46,20 +46,12 @@
 
 .mod-hero {
     height: 400px;
-
+    
     .text-wrapper {
         top: 62.5%;
     }
-
+    
     &.hero-small {
-       height: 250px;
-    }
-}
-
-.mod-contact {
-    &.show {
-        .toggle-form {
-            left: -170px;
-        }
+       height: 250px; 
     }
 }
