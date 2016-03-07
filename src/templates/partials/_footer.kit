@@ -1,0 +1,50 @@
+<!-- begin: FOOTER -->
+<footer id="footer" class="row-container" role="contentinfo">
+	<div class="row">
+		<p>&copy; 2015 Kevin Utoft</p>
+	</div>
+</footer>
+<!-- end: FOOTER -->
+
+<!-- Load all JS at bottom of page for optimized performance -->
+<script src="<!--$root-->assets/libs/vendor.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.min.js"></script>
+<script src="<!--$root-->assets/js/app.min.js"></script>
+
+<script>
+    var theForm = document.getElementById( 'theForm' );
+
+    new stepsForm( theForm, {
+        onSubmit : function( form ) {
+            // hide form
+            classie.addClass( theForm.querySelector( '.simform-inner' ), 'hide' );
+
+            /*
+            form.submit()
+            or
+            AJAX request (maybe show loading indicator while we don't have an answer..)
+            */
+
+            // let's just simulate something...
+            var messageEl = theForm.querySelector( '.final-message' );
+            messageEl.innerHTML = 'Thank you! We\'ll be in touch.';
+            classie.addClass( messageEl, 'show' );
+        }
+    } );
+</script>
+
+<script>
+	;(function() {
+        // Initialize
+      var bLazy = new Blazy({
+		      offset: 100 // Loads images 100px before they're visible
+		  });
+  })();
+</script>
+
+<script>
+	new WOW().init();
+</script>
+
+</body>
+</html>
