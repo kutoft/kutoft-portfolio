@@ -47,8 +47,8 @@ $(document).ready(function () {
         // init Isotope
         var $portfolio = $('#portfolio').isotope({
             itemSelector: '.portfolio-item',
-            transitionDuration: '0.8s',
-            animationEngine: 'css'
+            layoutMode: 'fitRows',
+            transitionDuration: '0.8s'
         });
         // filter items on button click
         $('.filter-select-group').on( 'click', 'li', function() {

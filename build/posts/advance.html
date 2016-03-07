@@ -2,9 +2,6 @@
 
 
 <!DOCTYPE html>
-<!--[if IE 8]>         <html class="no-js ie lt-ie10 lt-ie9"> <![endif]-->
-<!--[if IE 9]>         <html class="no-js ie lt-ie10"> <![endif]-->
-<!--[if gt IE 9]><!--> <html class="no-js"> <!--<![endif]-->
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -19,11 +16,7 @@
     <link href='https://fonts.googleapis.com/css?family=Raleway:400,200,600,900|Droid+Serif' rel='stylesheet' type='text/css'>
 
     <!-- CSS -->
-    <link rel="stylesheet" href="../assets/css/main.css">
-
-    <!--[if (lt IE 9) & (!IEMobile)]>
-    
-    <![endif]-->
+    <link rel="stylesheet" href="../assets/css/main.min.css">
 
 
 </head>
@@ -159,6 +152,7 @@
 
 <!-- Load all JS at bottom of page for optimized performance -->
 <script src="../assets/libs/vendor.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.min.js"></script>
 <script src="../assets/js/app.min.js"></script>
 
 <script>
@@ -184,12 +178,16 @@
 </script>
 
 <script>
-    ;(function() {
+	;(function() {
         // Initialize
-        var bLazy = new Blazy({
-        offset: 100 // Loads images 100px before they're visible
-    });
-    })();
+      var bLazy = new Blazy({
+		      offset: 100 // Loads images 100px before they're visible
+		  });
+  })();
+</script>
+
+<script>
+	new WOW().init();
 </script>
 
 </body>
