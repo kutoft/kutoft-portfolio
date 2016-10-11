@@ -139,7 +139,7 @@
 <!-- begin: FOOTER -->
 <footer id="footer" class="row-container" role="contentinfo">
 	<div class="row">
-		<p>&copy; 2015 Kevin Utoft</p>
+		<p>&copy; <span id="date">2015</span> Kevin Utoft</p>
 	</div>
 </footer>
 <!-- end: FOOTER -->
@@ -150,6 +150,10 @@
 <script src="../assets/js/app.min.js"></script>
 
 <script>
+		var date = new Date();
+		year = date.getFullYear();
+		$("#date").html(year);
+
     var theForm = document.getElementById( 'theForm' );
 
     new stepsForm( theForm, {

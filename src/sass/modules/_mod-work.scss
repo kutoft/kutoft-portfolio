@@ -1,10 +1,10 @@
 .mod-recent-work {
     background-color: #f9f9f9;
-    
+
     .mod-work-wrapper {
         padding: 0.5rem 0.5rem 1rem;
         height: auto;
-        
+
         a {
             display: block;
 
@@ -29,12 +29,12 @@
                     font-size: 0.875rem;
                 }
                 h5 {
-                    font-weight: 400;
+                    font-weight: 600;
                     font-size: 0.7rem;
                     margin-bottom: 0;
                 }
                 h6 {
-                    font-weight: 300;
+                    font-weight: 400;
                     font-size: 0.6rem;
                     margin-bottom: 0;
                 }
@@ -83,7 +83,7 @@
                         animation: none 1s;
                     }
                 }
-                } 
+                }
 
             &:hover .overlay {
                 opacity: 0.45;

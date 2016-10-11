@@ -76,7 +76,46 @@
 
     <div id="recent-work" class="mod-wrapper mod-recent-work">  
         <div id="portfolio" class="row small-up-2 medium-up-3 clearfix">    
-            <div class="column mod-wrapper mod-work-wrapper portfolio-item app dev all">
+            <div class="column mod-wrapper mod-work-wrapper portfolio-item dev design all">
+    <a href="posts/autodata.html">
+        <div class="image-wrapper">
+            <img src="assets/images/placeholder-16x9.jpg" alt="autodata">
+            <span class="image b-lazy" data-src="assets/images/projects/autodata/autodata-thumb.png"></span>
+        </div>
+        <div class="text-wrapper">
+            <h4>The Autodata Group</h4>
+            <h5>Responsive Website</h5>
+            <h6>Front End Development / Design</h6>
+        </div>
+    </a>
+</div>
+<div class="column mod-wrapper mod-work-wrapper portfolio-item dev design all">
+    <a href="posts/ford.html">
+        <div class="image-wrapper">
+            <img src="assets/images/placeholder-16x9.jpg" alt="ford">
+            <span class="image b-lazy" data-src="assets/images/projects/ford/ford1.png"></span>
+        </div>
+        <div class="text-wrapper">
+            <h4>Ford Summer Sales Event</h4>
+            <h5>Email Landing Page</h5>
+            <h6>Front End Development / Back End Development</h6>
+        </div>
+    </a>
+</div>
+<div class="column mod-wrapper mod-work-wrapper portfolio-item dev design all">
+    <a href="posts/mercedes.html">
+        <div class="image-wrapper">
+            <img src="assets/images/placeholder-16x9.jpg" alt="mercedes">
+            <span class="image b-lazy" data-src="assets/images/projects/mercedes/mercedes1.png"></span>
+        </div>
+        <div class="text-wrapper">
+            <h4>Mercedes Ben</h4>
+            <h5>Email Landing Page</h5>
+            <h6>Front End Development / Back End Development</h6>
+        </div>
+    </a>
+</div>
+<div class="column mod-wrapper mod-work-wrapper portfolio-item app dev all">
     <a href="posts/universal.html">
         <div class="image-wrapper">
             <img src="assets/images/placeholder-16x9.jpg" alt="Universal Studios Hollywood">
@@ -275,7 +314,7 @@
 <!-- begin: FOOTER -->
 <footer id="footer" class="row-container" role="contentinfo">
 	<div class="row">
-		<p>&copy; 2015 Kevin Utoft</p>
+		<p>&copy; <span id="date">2015</span> Kevin Utoft</p>
 	</div>
 </footer>
 <!-- end: FOOTER -->
@@ -286,6 +325,10 @@
 <script src="assets/js/app.min.js"></script>
 
 <script>
+		var date = new Date();
+		year = date.getFullYear();
+		$("#date").html(year);
+
     var theForm = document.getElementById( 'theForm' );
 
     new stepsForm( theForm, {

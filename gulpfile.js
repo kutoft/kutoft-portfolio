@@ -11,6 +11,7 @@ var gulp = require('gulp'),
     concat = require('gulp-concat'),
     uglify = require('gulp-uglify'),
     gulpFilter = require('gulp-filter'),
+    newer = require('gulp-newer'),
     imagemin = require('gulp-imagemin'),
     pngquant = require('imagemin-pngquant'),
     sourcemaps = require('gulp-sourcemaps'),
@@ -83,6 +84,7 @@ gulp.task('scripts', function() {
 
 gulp.task('images', function () {
     return gulp.src('src/images/**/*')
+        .pipe(newer('build/assets/images'))
         .pipe(imagemin({
             progressive: true,
             use: [pngquant()]
@@ -106,6 +108,7 @@ gulp.task('watch', function() {
   gulp.watch('src/templates/**/*.kit', ['kitInclude']);
   gulp.watch('src/sass/**/*.scss', ['styles']);
   gulp.watch('src/js/**/*.js', ['scripts']);
+  gulp.watch('src/images/**/*', ['images']);
 
 });
 
@@ -113,6 +116,6 @@ gulp.task('watch', function() {
 
 //  Default Gulp Task
 //===========================================
-gulp.task('default', ['kitInclude', 'styles', 'libs', 'scripts', 'watch', 'connect'], function() {
+gulp.task('default', ['kitInclude', 'styles', 'libs', 'scripts', 'images', 'watch', 'connect'], function() {
 
 });
